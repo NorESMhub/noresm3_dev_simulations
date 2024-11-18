@@ -7,7 +7,7 @@
     this is done automatically by the scripts.
     </header>
   <group id="build_grid">
-    <entry id="GRID" value="a%ne30np4.pg3_l%0.9x1.25_oi%tnx1v4_r%r05_w%null_z%null_g%gris4_m%tnx1v4">
+    <entry id="GRID" value="a%ne30np4.pg3_l%ne30np4.pg3_oi%tnx1v4_r%r05_w%null_z%null_g%gris4_m%tnx1v4">
       <type>char</type>
       <desc>Model grid - DO NOT EDIT (for experts only)</desc>
     </entry>
@@ -23,15 +23,15 @@
       <type>integer</type>
       <desc>number of atmosphere cells in j direction - DO NOT EDIT (for experts only)</desc>
     </entry>
-    <entry id="LND_GRID" value="0.9x1.25">
+    <entry id="LND_GRID" value="ne30np4.pg3">
       <type>char</type>
       <desc>land grid - DO NOT EDIT (for experts only)</desc>
     </entry>
-    <entry id="LND_NX" value="288">
+    <entry id="LND_NX" value="48600">
       <type>integer</type>
       <desc>number of land cells in i direction - DO NOT EDIT (for experts only)</desc>
     </entry>
-    <entry id="LND_NY" value="192">
+    <entry id="LND_NY" value="1">
       <type>integer</type>
       <desc>number of land cells in j direction - DO NOT EDIT (for experts only)</desc>
     </entry>
@@ -131,7 +131,7 @@
     </entry>
   </group>
   <group id="build_def">
-    <entry id="CIME_OUTPUT_ROOT" value="/cluster/work/users/mvertens/noresm">
+    <entry id="CIME_OUTPUT_ROOT" value="/cluster/work/users/kjetisaa/noresm">
       <type>char</type>
       <valid_values/>
       <desc>Output root directory for each machine.
@@ -323,6 +323,12 @@
       <desc>Status: of prior build. (DO NOT EDIT)</desc>
     </entry>
   </group>
+  <group id="case_git">
+    <entry id="CASE_GIT_REPOSITORY">
+      <type>char</type>
+      <desc>Remote git repository used for this case</desc>
+    </entry>
+  </group>
   <group id="build_component_cam">
     <entry id="CAM_CPPDEFS" value="    -DPLON=1 -DPLAT=1 -DNUM_COMP_INST_ATM=1 -DNUM_COMP_INST_LND=1 -DNUM_COMP_INST_OCN=1 -DNUM_COMP_INST_ICE=1 -DNUM_COMP_INST_GLC=1 -DNUM_COMP_INST_ROF=1 -DNUM_COMP_INST_WAV=1 -DNUM_COMP_INST_IAC=1 -DNUM_COMP_INST_ESP=1 -DCAM  -D_WK_GRAD -DNP=4 -DHAVE_F2003_PTR_BND_REMAP -DFVM_TRACERS -D_MPI -DPLEV=58 -DPCNST=40 -DPCOLS=16 -DPSUBCOLS=1 -DN_RAD_CNST=30 -DPTRM=1 -DPTRN=1 -DPTRK=1 -DSPMD -DOSLO_AERO -DCLUBB_SGS -DCLUBB_CAM -DNO_LAPACK_ISNAN -DCLUBB_REAL_TYPE=dp -DMODEL_ -DMODEL_CESM -DHEMCO_CESM -DUSE_REAL8">
       <type>char</type>
@@ -367,7 +373,7 @@
     <entry id="BLOM_ATRC" value="FALSE">
       <type>logical</type>
       <valid_values>TRUE,FALSE</valid_values>
-      <desc>Set preprocessor option to activate age tracer code. Requires module iage or ecosys</desc>
+      <desc>Set namelist option to activate age tracer code. Requires module iage or ecosys</desc>
     </entry>
     <entry id="BLOM_TURBULENT_CLOSURE" value="">
       <type>char</type>

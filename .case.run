@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
 # Batch system directives
-#SBATCH  --job-name=run.n1850.ne30_f09_tn14.twin_hybrid_coare.20240723
+#SBATCH  --job-name=run.n1850.ne30_tn14.hybrid_fatessp.20241111
 #SBATCH  --nodes=17
 #SBATCH  --ntasks-per-node=128
-#SBATCH  --output=run.n1850.ne30_f09_tn14.twin_hybrid_coare.20240723
+#SBATCH  --output=run.n1850.ne30_tn14.hybrid_fatessp.20241111   
 #SBATCH  --ntasks=2176
 #SBATCH  --export=ALL
 #SBATCH  --switches=1
-#SBATCH  --exclude=b3355,b3356,b3357,b3359,b3379,b3382,b3383,b3120,b3133,b3134,b3135,b3171,b3173,b3181,b3186,b3190,b3192,b3194
 #SBATCH  --partition=normal
 
 """
@@ -19,9 +18,9 @@ DO NOT RUN THIS SCRIPT MANUALLY
 """
 
 import os, sys
-os.chdir( '/cluster/home/mvertens/cases/n1850.ne30_f09_tn14.twin_hybrid_coare.20240723')
+os.chdir( '/cluster/work/users/kjetisaa/n1850.ne30_tn14.hybrid_fatessp.20241111')
 
-_LIBDIR = os.path.join("/cluster/projects/nn9560k/mvertens/src/noresm2_5_alpha03/cime", "CIME", "Tools")
+_LIBDIR = os.path.join("/cluster/work/users/kjetisaa/NorESM_alpha07_fatessp_newradiation/cime", "CIME", "Tools")
 sys.path.append(_LIBDIR)
 
 from standard_script_setup          import *

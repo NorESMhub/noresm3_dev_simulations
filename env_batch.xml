@@ -40,7 +40,6 @@
       <directive> --ntasks={{ total_tasks }}</directive>
       <directive> --export=ALL</directive>
       <directive> --switches=1</directive>
-      <directive> --exclude=b3355,b3356,b3357,b3359,b3379,b3382,b3383</directive>
     </directives>
     <directives queue="normal">
       <directive> --partition=normal</directive>
@@ -51,11 +50,11 @@
     </directives>
     <directives queue="preproc">
       <directive> --partition=preproc</directive>
-      <directive> --mem=16G</directive>
+      <directive> --mem-per-cpu=1900M</directive>
     </directives>
     <queues>
-      <queue walltimemax="00:59:00" nodemin="4" nodemax="1024" default="true">normal</queue>
-      <queue walltimemax="00:59:00" nodemin="1" nodemax="1">preproc</queue>
+      <queue walltimedef="00:59:00" walltimemax="48:00:00" nodemin="4" nodemax="1024" default="true">normal</queue>
+      <queue walltimemax="00:59:00" jobmin="1" jobmax="1">preproc</queue>
       <queue walltimemax="00:59:00" nodemin="1" nodemax="4">devel</queue>
     </queues>
   </batch_system>

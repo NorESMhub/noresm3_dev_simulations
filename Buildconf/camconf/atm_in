@@ -377,6 +377,7 @@
  opom_cycle_year		= 2000
  opom_source		= 'odowd'
  opom_source_type		= 'CYCLICAL'
+ use_aerocom		= .true.
  volc_fraction_coarse		= 0.0
 /
 &phys_ctl_nl
@@ -432,7 +433,7 @@
  prescribed_volcaero_type		= 'CYCLICAL'
 /
 &pumas_stochastic_tau_nl
- pumas_stochastic_tau_kernel_filename		= '/cluster/projects/nn9560k/mvertens/src/noresm2_5_alpha03/components/cam/bld/../src/physics/pumas/KBARF_tau_kernel.dat'
+ pumas_stochastic_tau_kernel_filename		= '/cluster/work/users/kjetisaa/NorESM_alpha07_fatessp_newradiation/components/cam/bld/../src/physics/pumas/KBARF_tau_kernel.dat'
 /
 &qneg_nl
  print_qneg_warn		= 'summary'

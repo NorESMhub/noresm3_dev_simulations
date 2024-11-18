@@ -3,17 +3,18 @@
   conserv_check = .false.
   days_per_year = 365
   diagfreq = 24
-  dumpfreq = "x"
-  dumpfreq_n = 1
-  hist_avg = .true.
+  dumpfreq = "x", "x", "x", "x", "x"
+  dumpfreq_n = 1, 1, 1, 1, 1
+  hist_avg = .true., .true., .true., .true., .true.
+  hist_suffix = "x", "1", "2", "3", "4"
+  hist_time_axis = "middle"
   histfreq = "m", "x", "x", "x", "x"
   histfreq_n = 1, 0, 0, 0, 0
   history_file = "unknown"
   history_format = "default"
   history_precision = 4
-  ice_ic = "/cluster/work/users/matsbn/archive/NOIIAJRAOC20TR_TL319_tn14_ppm_notz_20240115/rest/1775-01-01-00000/NOIIAJRAOC20TR_TL319_tn14_ppm_notz_20240115.cice.r.1775-01-01-00000.nc"
+  ice_ic = "/cluster/shared/noresm/inputdata/restart/NOIIAJRAOC20TR_TL319_tn14_ppm_20240816/rest/1775-01-01-00000/NOIIAJRAOC20TR_TL319_tn14_ppm_20240816.cice.r.1775-01-01-00000.nc"
   latpnt = 90.0, -65.0
-  lcdf64 = .true.
   lonpnt = 0.0, -45.0
   ndtd = 1
   numax = 99
@@ -82,10 +83,12 @@
   tr_snow = .false.
 /
 &thermo_nml
+  Tliquidus_max = -0.1
   a_rapid_mode = 0.5e-03
   aspect_rapid_mode = 1.0
   conduct = "MU71"
   dsdt_slow_mode = -1.5e-07
+  hi_min = 0.01
   kitd = 1
   ktherm = 2
   phi_c_slow_mode = 0.05
@@ -265,11 +268,17 @@
 /
 &icefields_fsd_nml
   f_afsd = "xxxxx"
+  f_afsdn = "xxxxx"
   f_dafsd_latg = "xxxxx"
   f_dafsd_latm = "xxxxx"
   f_dafsd_newi = "xxxxx"
   f_dafsd_wave = "xxxxx"
   f_dafsd_weld = "xxxxx"
+  f_diam_ww = "xxxxx"
+  f_fsdperim = "xxxxx"
+  f_fsdrad = "xxxxx"
+  f_hice_ww = "xxxxx"
+  f_wave_sig_ht = "xxxxx"
 /
 &icefields_mechred_nml
   f_alvl = "xxxxx"

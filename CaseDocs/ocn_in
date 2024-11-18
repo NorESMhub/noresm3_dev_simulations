@@ -1,3 +1,25 @@
+&ale_regrid_remap
+  DENSITY_LIMITING = 'monotonic'
+  DENSITY_PC_LOWER_BNDR = .false.
+  DENSITY_PC_UPPER_BNDR = .false.
+  DKTZL = 2
+  DKTZU = 4
+  DPMIN_INTERIOR = .1
+  LOWER_BNDR_ORD = 4
+  RECONSTRUCTION_METHOD = 'ppm'
+  REGRID_METHOD = 'nudge'
+  REGRID_NUDGE_TS = 86400.
+  SMOOTH_DIFF_MAX = 50000.
+  STAB_FAC_LIMIT = .75
+  TRACER_LIMITING = 'non_oscillatory'
+  TRACER_PC_LOWER_BNDR = .false.
+  TRACER_PC_UPPER_BNDR = .true.
+  UPPER_BNDR_ORD = 6
+  VELOCITY_LIMITING = 'non_oscillatory'
+  VELOCITY_PC_LOWER_BNDR = .false.
+  VELOCITY_PC_UPPER_BNDR = .true.
+/
+
 &bgcnml
   ATM_CO2 = 284.7
   DO_N2ONH3_COUPLED = .false.
@@ -16,7 +38,7 @@
   INIPO4 = '/cluster/shared/noresm/inputdata/ocn/blom/inicon/woa13_phosphate_OMIPinit_20171107.nc'
   INISIL = '/cluster/shared/noresm/inputdata/ocn/blom/inicon/woa13_silicate_OMIPinit_20171107.nc'
   L_3DVARSEDPOR = .false.
-  LEUPHOTIC_CYA = .false.
+  LKWRBIOZ_OFF = .false.
   NDEPFILE = '/cluster/shared/noresm/inputdata/ocn/blom/bndcon/ndep_1850_CMIP6_tnx1v4_20171106.nc'
   OCN_CO2_TYPE = 'constant'
   PI_PH_FILE = ''
@@ -55,6 +77,7 @@
   USE_NATDIC = .false.
   USE_PBGC_CK_TIMESTEP = .false.
   USE_PBGC_OCNP_TIMESTEP = .false.
+  USE_PREF_TRACERS = .true.
   USE_SEDBYPASS = .false.
   USE_WLIN = .true.
 /
@@ -327,8 +350,7 @@
   SRF_CO214FXU = 0, 2, 2
   SRF_CO2FXD = 4, 2, 2
   SRF_CO2FXU = 4, 2, 2
-  SRF_CO2KH = 0, 2, 2
-  SRF_CO2KHM = 0, 2, 2
+  SRF_CO2SOL = 0, 2, 2
   SRF_DIC = 4, 2, 2
   SRF_DMS = 0, 2, 2
   SRF_DMS_BAC = 0, 2, 2
@@ -338,9 +360,10 @@
   SRF_EXPOCA = 0, 2, 2
   SRF_EXPORT = 0, 2, 2
   SRF_EXPOSI = 0, 2, 2
+  SRF_FCO2 = 0, 2, 2
   SRF_IRON = 0, 2, 2
   SRF_KWCO2 = 0, 2, 2
-  SRF_KWCO2KHM = 0, 2, 2
+  SRF_KWCO2SOL = 0, 2, 2
   SRF_N2OFX = 0, 2, 2
   SRF_NATALKALI = 0, 2, 2
   SRF_NATCO2FX = 0, 2, 2
@@ -351,7 +374,7 @@
   SRF_OXFLUX = 0, 2, 2
   SRF_OXYGEN = 0, 2, 2
   SRF_PCO2 = 0, 2, 2
-  SRF_PCO2M = 0, 2, 2
+  SRF_PCO2_GEX = 0, 2, 2
   SRF_PH = 0, 2, 2
   SRF_PHOSPH = 0, 2, 2
   SRF_PHYTO = 4, 2, 2
@@ -359,6 +382,7 @@
   SRF_PNH3 = 0, 2, 2
   SRF_SF6 = 0, 2, 2
   SRF_SILICA = 0, 2, 2
+  SRF_XCO2 = 0, 2, 2
 /
 
 &diaphy
@@ -578,6 +602,7 @@
   CCFILE = '/cluster/shared/noresm/inputdata/ocn/blom/bndcon/chlorophyll_concentration_tnx1v4_20170608.nc'
   CE = .06
   CHLOPT = 'climatology'
+  CL = .25
   CNSVDI = .false.
   CSDIAG = .false.
   CWBDLS = 25.
@@ -586,26 +611,30 @@
   DITFLX = .false.
   EXPCNF = 'cesm'
   GRFILE = '/cluster/shared/noresm/inputdata/ocn/blom/grid/grid_tnx1v4_20170622.nc'
-  ICFILE = '/cluster/work/users/matsbn/archive/NOIIAJRAOC20TR_TL319_tn14_ppm_notz_20240115/rest/1775-01-01-00000/NOIIAJRAOC20TR_TL319_tn14_ppm_notz_20240115.blom.r.1775-01-01-00000.nc'
+  ICFILE = '/cluster/shared/noresm/inputdata/restart/NOIIAJRAOC20TR_TL319_tn14_ppm_20240816/rest/1775-01-01-00000/NOIIAJRAOC20TR_TL319_tn14_ppm_20240816.blom.r.1775-01-01-00000.nc'
   IDATE = 00010101
   IDATE0 = 00010101
   IOTYPE = 1
   ITEST = 60
   JTEST = 60
   JWTYPE = 3
+  LFMIN = 5000.
   MDC2HI = 5000.
   MDC2LO = 300.
   MDV2HI = .02
   MDV2LO = .004
   MDV4HI = 0.
   MDV4LO = 0.
+  MLRMTH = 'fox08'
   MLRTTP = 'constant'
   MOMMTH = 'enscon'
+  MSTAR = .5
   NDAY1 = 0
   NDAY2 = 0
   NIWBF = .35
   NIWGF = .4
   NIWLF = .5
+  NSTAR = .066
   PREF = 2000.e4
   RM0 = 1.2
   RM5 = 0.
@@ -623,6 +652,11 @@
   SRXDPT = 1.
   SRXLIM = .5
   SWAMTH = 'jerlov'
+  TAU_DECAYING_HBL = 0.
+  TAU_DECAYING_HML = 0.
+  TAU_GROWING_HBL = 0.
+  TAU_GROWING_HML = 0.
+  TAU_MLR = 86400.
   TDFILE = '/cluster/shared/noresm/inputdata/ocn/blom/bndcon/tidal_dissipation_tnx1v4_20170605.nc'
   TRXDAY = 0.
   TRXDPT = 1.
@@ -633,6 +667,7 @@
   VSC4HI = 0.
   VSC4LO = 0.
   WAVSRC = 'none'
+  WPUP_MIN = 1.e-7
 /
 
 &merdia
@@ -670,23 +705,12 @@
 /
 
 &vcoord
-  DENSITY_LIMITING = 'monotonic'
-  DENSITY_PC_LOWER_BNDR = .false.
-  DENSITY_PC_UPPER_BNDR = .false.
-  DKTZL = 0
-  DKTZU = 0
   DPMIN_INFLATION_FACTOR = 1.08
-  DPMIN_INTERIOR = .1
   DPMIN_SURFACE = 2.5
-  LOWER_BNDR_ORD = 4
-  RECONSTRUCTION_METHOD = 'ppm'
-  TRACER_LIMITING = 'non_oscillatory'
-  TRACER_PC_LOWER_BNDR = .false.
-  TRACER_PC_UPPER_BNDR = .true.
-  UPPER_BNDR_ORD = 6
+  PLEVEL = -1.,-1.
+  PLEVEL_SPEC = 'inflation'
+  SIGREF = -1.,-1.
+  SIGREF_SPEC = 'inicon'
   VCOORD_TYPE = 'cntiso_hybrid'
-  VELOCITY_LIMITING = 'non_oscillatory'
-  VELOCITY_PC_LOWER_BNDR = .false.
-  VELOCITY_PC_UPPER_BNDR = .true.
 /
 

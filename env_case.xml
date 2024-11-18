@@ -30,7 +30,7 @@
       <type>char</type>
       <desc>Scripts root utils directory location (setup automatically to $CIMEROOT/scripts/Tools - DO NOT EDIT)</desc>
     </entry>
-    <entry id="MODEL_VERSION" value="noresm_develop_v7_proto-35-g8bdac78">
+    <entry id="MODEL_VERSION" value="noresm2_5_alpha07">
       <type>char</type>
       <desc>Apparent version of the model used for this case</desc>
     </entry>
@@ -178,7 +178,7 @@
       <type>char</type>
       <desc> path to buildlib script for the given library </desc>
     </entry>
-    <entry id="COMPSET" value="1850_CAM%DEV%LT%NORESM%CAMoslo_CLM51%SP_CICE_BLOM%ECO_MOSART_DGLC%NOEVOLVE_SWAV_SESP">
+    <entry id="COMPSET" value="1850_CAM%DEV%LT%NORESM%CAMoslo_CLM60%FATES-SP_CICE_BLOM%ECO_MOSART_DGLC%NOEVOLVE_SWAV_SESP">
       <type>char</type>
       <desc>Component set long name (for documentation only - DO NOT EDIT)</desc>
     </entry>
@@ -297,7 +297,7 @@
       <desc> main configuration file that specifies all relevant filenames
     and directories to configure a case</desc>
     </entry>
-    <entry id="CASEROOT" value="/cluster/home/mvertens/cases/n1850.ne30_f09_tn14.twin_hybrid_coare.20240723">
+    <entry id="CASEROOT" value="/cluster/work/users/kjetisaa/n1850.ne30_tn14.hybrid_fatessp.20241111">
       <type>char</type>
       <desc>full pathname of case</desc>
     </entry>
@@ -306,15 +306,15 @@
       <valid_values>TRUE,FALSE</valid_values>
       <desc>user is not on the requested machine</desc>
     </entry>
-    <entry id="CIMEROOT" value="/cluster/projects/nn9560k/mvertens/src/noresm2_5_alpha03/cime">
+    <entry id="CIMEROOT" value="/cluster/work/users/kjetisaa/NorESM_alpha07_fatessp_newradiation/cime">
       <type>char</type>
       <desc>full pathname of CIME source root directory</desc>
     </entry>
-    <entry id="SRCROOT" value="/cluster/projects/nn9560k/mvertens/src/noresm2_5_alpha03">
+    <entry id="SRCROOT" value="/cluster/work/users/kjetisaa/NorESM_alpha07_fatessp_newradiation">
       <type>char</type>
       <desc>full pathname of source root directory</desc>
     </entry>
-    <entry id="CASE" value="n1850.ne30_f09_tn14.twin_hybrid_coare.20240723">
+    <entry id="CASE" value="n1850.ne30_tn14.hybrid_fatessp.20241111">
       <type>char</type>
       <desc>case name</desc>
     </entry>
@@ -326,7 +326,7 @@
       <type>char</type>
       <desc>Machine name</desc>
     </entry>
-    <entry id="MACHDIR" value="/cluster/projects/nn9560k/mvertens/src/noresm2_5_alpha03/ccs_config/machines">
+    <entry id="MACHDIR" value="/cluster/work/users/kjetisaa/NorESM_alpha07_fatessp_newradiation/ccs_config/machines">
       <type>char</type>
       <desc>Machines directory location</desc>
     </entry>
@@ -340,11 +340,11 @@
       <type>char</type>
       <desc>case user name</desc>
     </entry>
-    <entry id="REALUSER" value="mvertens">
+    <entry id="REALUSER" value="kjetisaa">
       <type>char</type>
       <desc>username of user who created case</desc>
     </entry>
-    <entry id="CASE_HASH" value="d1e506742c61ee1f09e1541fcdda80e49eec96c3d84823b39e0c2d004a348c76">
+    <entry id="CASE_HASH" value="006aeebbf0cdcc60de0c6f964c9ca60981891636e09795af998fb2bf17cc18c0">
       <type>char</type>
       <desc>Unique identifier for case</desc>
     </entry>
@@ -388,7 +388,7 @@
     </entry>
   </group>
   <group id="run_component_ctsm">
-    <entry id="CLM_USER_MODS">
+    <entry id="CLM_USER_MODS" value="$COMP_ROOT_DIR_LND/cime_config/usermods_dirs/fates_sp">
       <type>char</type>
       <valid_values/>
       <desc>User mods to apply to specific compset matches. </desc>

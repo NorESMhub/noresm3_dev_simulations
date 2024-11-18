@@ -6,16 +6,16 @@
 module --force purge 
 module load StdEnv
 module use /cluster/shared/noresm/eb_mods/modules/all
-module load ESMF/8.4.1-iomkl-2021b-ParallelIO-2.5.10 CMake/3.21.1-GCCcore-11.2.0 Python/3.9.6-GCCcore-11.2.0 ParMETIS/4.0.3-iompi-2021b
-export ESMFMKFILE=/cluster/shared/noresm/eb_mods/software/ESMF/8.4.1-iomkl-2021b-ParallelIO-2.5.10/lib/esmf.mk
+module load ESMF/8.4.2-iomkl-2022a-ParallelIO-2.5.10 Python/3.11.3-GCCcore-12.3.0 CMake/3.26.3-GCCcore-12.3.0 ParMETIS/4.0.3-iompi-2022a git/2.41.0-GCCcore-12.3.0-nodocs XML-LibXML/2.0209-GCCcore-12.3.0 hpcx/2.20
+export ESMFMKFILE=/cluster/shared/noresm/eb_mods/software/ESMF/8.4.2-iomkl-2022a-ParallelIO-2.5.10/lib/esmf.mk
 export ESMF_RUNTIME_PROFILE=ON
 export ESMF_RUNTIME_PROFILE_OUTPUT=SUMMARY
 export HCOLL_MAIN_IB=mlx5_0:1
 export KMP_STACKSIZE=64M
 export MKL_DEBUG_CPU_TYPE=5
 export PIO_VERSION_MAJOR=2
-export PIO_LIBDIR=/cluster/shared/noresm/eb_mods/software/ParallelIO/2.5.10-iompi-2021b/lib
-export PIO_INCDIR=/cluster/shared/noresm/eb_mods/software/ParallelIO/2.5.10-iompi-2021b/include
+export PIO_LIBDIR=/cluster/software/ParallelIO/2.5.10-iompi-2022a/lib
+export PIO_INCDIR=/cluster/software/ParallelIO/2.5.10-iompi-2022a/include
 export PIO_TYPENAME_VALID_VALUES=pnetcdf,netcdf,netcdf4p,netcdf4c
 export OMPI_MCA_mpi_leave_pinned=1
 export OMPI_MCA_btl=self,vader

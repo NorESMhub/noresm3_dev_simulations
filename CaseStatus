@@ -1,150 +1,102 @@
-2024-07-23 11:02:39: xmlchange success <command> ./xmlchange NTASKS=1920  </command>
+2024-11-11 21:24:24: xmlchange success <command> ./xmlchange NTASKS=1920  </command>
  ---------------------------------------------------
-2024-07-23 11:02:45: xmlchange success <command> ./xmlchange NTASKS_OCN=256  </command>
+2024-11-11 21:24:24: xmlchange success <command> ./xmlchange NTASKS_OCN=256  </command>
  ---------------------------------------------------
-2024-07-23 11:02:56: xmlchange success <command> ./xmlchange ROOTPE_OCN=1920  </command>
+2024-11-11 21:24:24: xmlchange success <command> ./xmlchange ROOTPE=0  </command>
  ---------------------------------------------------
-2024-07-23 11:04:13: xmlchange success <command> ./xmlchange BLOM_VCOORD=cntiso_hybrid,BLOM_TURBULENT_CLOSURE=  </command>
+2024-11-11 21:24:25: xmlchange success <command> ./xmlchange ROOTPE_OCN=1920  </command>
  ---------------------------------------------------
-2024-07-23 11:04:42: xmlchange success <command> ./xmlchange STOP_N=10  </command>
+2024-11-11 21:24:25: xmlchange success <command> ./xmlchange BLOM_VCOORD=cntiso_hybrid,BLOM_TURBULENT_CLOSURE=  </command>
  ---------------------------------------------------
-2024-07-23 11:04:48: xmlchange success <command> ./xmlchange STOP_OPTION=nyears  </command>
+2024-11-11 21:24:25: xmlchange success <command> ./xmlchange STOP_OPTION=nyears  </command>
  ---------------------------------------------------
-2024-07-23 11:05:21: xmlchange success <command> ./xmlchange DOUT_S_ROOT=/nird/datalake/NS2345K/mvertens/twin_hybrid_coare.20240723  </command>
+2024-11-11 21:24:25: xmlchange success <command> ./xmlchange STOP_N=7  </command>
  ---------------------------------------------------
-2024-07-23 11:05:54: case.setup starting 
+2024-11-11 21:24:25: xmlchange success <command> ./xmlchange REST_N=1  </command>
  ---------------------------------------------------
-2024-07-23 11:06:03: case.setup success 
+2024-11-11 21:24:26: xmlchange success <command> ./xmlchange REST_OPTION=nyears  </command>
  ---------------------------------------------------
-2024-07-23 11:06:09: case.build starting 
+2024-11-11 21:24:26: xmlchange success <command> ./xmlchange RESUBMIT=3  </command>
  ---------------------------------------------------
-2024-07-23 11:15:38: case.build success 
+2024-11-11 21:24:26: xmlchange success <command> ./xmlchange --subgroup case.run JOB_WALLCLOCK_TIME=48:00:00  </command>
  ---------------------------------------------------
-2024-07-23 11:18:58: xmlchange success <command> ./xmlchange JOB_WALLCLOCK_TIME=1-18:00:00  </command>
+2024-11-11 21:24:26: xmlchange success <command> ./xmlchange --subgroup case.st_archive JOB_WALLCLOCK_TIME=03:00:00  </command>
  ---------------------------------------------------
-2024-07-23 11:22:14: case.submit starting 
+2024-11-11 21:25:08: case.setup starting 
  ---------------------------------------------------
-2024-07-23 11:22:14: case.submit error 
-ERROR: Command: 'sbatch --time 1-18:00:00 --account nn9039k  --dependency=afterok:959128 case.st_archive --resubmit' failed with error 'sbatch: error: Batch job submission failed: Requested time limit is invalid (missing or exceeds some limit)' from dir '/cluster/projects/nn9560k/mvertens/cases/n1850.ne30_f09_tn14.twin_hybrid_coare.20240723'
+2024-11-11 21:25:13: case.setup success 
  ---------------------------------------------------
-2024-07-23 11:22:20: case.run starting 959128
+2024-11-11 21:25:13:   local git repository created
  ---------------------------------------------------
-2024-07-23 11:22:28: model execution starting 959128
+2024-11-11 21:29:02: case.build starting 
  ---------------------------------------------------
-2024-07-23 11:23:19: xmlchange success <command> ./xmlchange JOB_WALLCLOCK_TIME=1D-18:00:00  </command>
+2024-11-11 21:38:44: case.build starting 
  ---------------------------------------------------
-2024-07-23 11:23:29: case.submit starting 
+2024-11-11 21:38:51: case.build success 
  ---------------------------------------------------
-2024-07-23 11:23:29: case.submit error 
-ERROR: Command: 'sbatch --time 1D-18:00:00 --account nn9039k .case.run --resubmit' failed with error 'sbatch: error: Invalid --time specification' from dir '/cluster/projects/nn9560k/mvertens/cases/n1850.ne30_f09_tn14.twin_hybrid_coare.20240723'
+2024-11-11 21:39:20: case.build success 
  ---------------------------------------------------
-2024-07-23 11:24:19: xmlchange success <command> ./xmlchange JOB_WALLCLOCK_TIME=1d-18:00:00  </command>
+2024-11-11 21:41:45: case.submit starting 1030936
  ---------------------------------------------------
-2024-07-23 11:24:31: case.submit starting 
+2024-11-11 21:41:46: case.submit success 1030936
  ---------------------------------------------------
-2024-07-23 11:24:31: case.submit error 
-ERROR: Command: 'sbatch --time 1d-18:00:00 --account nn9039k .case.run --resubmit' failed with error 'sbatch: error: Invalid --time specification' from dir '/cluster/projects/nn9560k/mvertens/cases/n1850.ne30_f09_tn14.twin_hybrid_coare.20240723'
+2024-11-11 21:42:08: case.run starting 1030935
  ---------------------------------------------------
-2024-07-23 11:26:39: xmlchange success <command> ./xmlchange JOB_WALLCLOCK_TIME=1-18:0:0  </command>
+2024-11-11 21:42:15: model execution starting 1030935
  ---------------------------------------------------
-2024-07-23 11:27:01: case.submit starting 
+2024-11-12 23:02:49: model execution success 1030935
  ---------------------------------------------------
-2024-07-23 11:27:01: case.submit error 
-ERROR: Command: 'sbatch --time 1-18:0:0 --account nn9039k  --dependency=afterok:959131 case.st_archive --resubmit' failed with error 'sbatch: error: Batch job submission failed: Requested time limit is invalid (missing or exceeds some limit)' from dir '/cluster/projects/nn9560k/mvertens/cases/n1850.ne30_f09_tn14.twin_hybrid_coare.20240723'
+2024-11-12 23:02:51: case.run success 1030935
  ---------------------------------------------------
-2024-07-23 11:27:06: case.run starting 959131
+2024-11-12 23:03:08: st_archive starting 1030936
  ---------------------------------------------------
-2024-07-23 11:27:14: model execution starting 959131
+2024-11-12 23:14:49: st_archive success 1030936
  ---------------------------------------------------
-2024-07-23 11:27:18: xmlchange success <command> ./xmlchange JOB_WALLCLOCK_TIME=2-0:0:0  </command>
+2024-11-12 23:14:50: case.submit starting 1031363
  ---------------------------------------------------
-2024-07-23 11:27:38: case.submit starting 
+2024-11-12 23:14:50: case.submit success 1031363
  ---------------------------------------------------
-2024-07-23 11:27:38: case.submit error 
-ERROR: Command: 'sbatch --time 2-0:0:0 --account nn9039k  --dependency=afterok:959133 case.st_archive --resubmit' failed with error 'sbatch: error: Batch job submission failed: Requested time limit is invalid (missing or exceeds some limit)' from dir '/cluster/projects/nn9560k/mvertens/cases/n1850.ne30_f09_tn14.twin_hybrid_coare.20240723'
+2024-11-12 23:15:12: case.run starting 1031362
  ---------------------------------------------------
-2024-07-23 11:27:44: case.run starting 959133
+2024-11-12 23:15:21: model execution starting 1031362
  ---------------------------------------------------
-2024-07-23 11:27:54: model execution starting 959133
+2024-11-13 23:38:01: model execution success 1031362
  ---------------------------------------------------
-2024-07-23 11:29:58: xmlchange success <command> ./xmlchange REST_N=1  </command>
+2024-11-13 23:38:02: case.run success 1031362
  ---------------------------------------------------
-2024-07-23 11:30:11: xmlchange success <command> ./xmlchange REST_OPTION=nyears  </command>
+2024-11-13 23:38:19: st_archive starting 1031363
  ---------------------------------------------------
-2024-07-23 11:34:03: xmlchange success <command> ./xmlchange JOB_WALLCLOCK_TIME=24:00:00  </command>
+2024-11-13 23:52:31: st_archive success 1031363
  ---------------------------------------------------
-2024-07-23 11:34:26: case.submit starting 959140
+2024-11-13 23:52:32: case.submit starting 1031840
  ---------------------------------------------------
-2024-07-23 11:34:26: case.submit success 959140
+2024-11-13 23:52:33: case.submit success 1031840
  ---------------------------------------------------
-2024-07-23 11:34:32: xmlchange success <command> ./xmlchange STOP_N=6  </command>
+2024-11-13 23:53:02: case.run starting 1031839
  ---------------------------------------------------
-2024-07-23 11:34:32: case.run starting 959139
+2024-11-13 23:53:11: model execution starting 1031839
  ---------------------------------------------------
-2024-07-23 11:34:40: model execution starting 959139
+2024-11-15 00:25:01: model execution success 1031839
  ---------------------------------------------------
-2024-07-23 11:34:56: case.run starting 959141
+2024-11-15 00:25:02: case.run success 1031839
  ---------------------------------------------------
-2024-07-23 11:35:11: model execution starting 959141
+2024-11-15 00:25:21: st_archive starting 1031840
  ---------------------------------------------------
-2024-07-23 11:35:12: case.submit starting 959143
+2024-11-15 00:38:57: st_archive success 1031840
  ---------------------------------------------------
-2024-07-23 11:35:12: case.submit success 959143
+2024-11-15 00:38:58: case.submit starting 1032203
  ---------------------------------------------------
-2024-07-23 11:36:30: xmlchange success <command> ./xmlchange STOP_N=10  </command>
+2024-11-15 00:38:58: case.submit success 1032203
  ---------------------------------------------------
-2024-07-23 11:36:42: xmlchange success <command> ./xmlchange JOB_WALLCLOCK_TIME=2d-0:0:0  </command>
+2024-11-15 00:39:23: case.run starting 1032202
  ---------------------------------------------------
-2024-07-23 11:38:49: xmlchange success <command> ./xmlchange --subgroup case.st_archive JOB_WALLCLOCK_TIME=00:20:00  </command>
+2024-11-15 00:39:33: model execution starting 1032202
  ---------------------------------------------------
-2024-07-23 11:38:59: case.submit starting 
+2024-11-16 00:53:36: model execution success 1032202
  ---------------------------------------------------
-2024-07-23 11:38:59: case.submit error 
-ERROR: Command: 'sbatch --time 2d-0:0:0 --account nn9039k .case.run --resubmit' failed with error 'sbatch: error: Invalid --time specification' from dir '/cluster/projects/nn9560k/mvertens/cases/n1850.ne30_f09_tn14.twin_hybrid_coare.20240723'
+2024-11-16 00:53:37: case.run success 1032202
  ---------------------------------------------------
-2024-07-23 11:41:38: case.submit starting 
+2024-11-16 00:53:57: st_archive starting 1032203
  ---------------------------------------------------
-2024-07-23 11:41:38: case.submit error 
-ERROR: Command: 'sbatch --time 2d-0:0:0 --account nn9039k .case.run --resubmit' failed with error 'sbatch: error: Invalid --time specification' from dir '/cluster/projects/nn9560k/mvertens/cases/n1850.ne30_f09_tn14.twin_hybrid_coare.20240723'
- ---------------------------------------------------
-2024-07-23 11:43:02: xmlchange success <command> ./xmlchange JOB_WALLCLOCK_TIME=1-18:0:0  </command>
- ---------------------------------------------------
-2024-07-23 11:43:23: case.submit starting 
- ---------------------------------------------------
-2024-07-23 11:43:23: case.submit error 
-ERROR: Command: 'sbatch --time 1-18:0:0 --account nn9039k  --dependency=afterok:959144 case.st_archive --resubmit' failed with error 'sbatch: error: Batch job submission failed: Requested time limit is invalid (missing or exceeds some limit)' from dir '/cluster/projects/nn9560k/mvertens/cases/n1850.ne30_f09_tn14.twin_hybrid_coare.20240723'
- ---------------------------------------------------
-2024-07-23 11:43:31: case.run starting 959144
- ---------------------------------------------------
-2024-07-23 11:43:41: model execution starting 959144
- ---------------------------------------------------
-2024-07-23 12:37:46: xmlchange success <command> ./xmlchange JOB_WALLCLOCK_TIME=24:00:00  </command>
- ---------------------------------------------------
-2024-07-23 12:38:03: xmlchange success <command> ./xmlchange STOP_N=6  </command>
- ---------------------------------------------------
-2024-07-23 12:38:29: case.submit starting 959175
- ---------------------------------------------------
-2024-07-23 12:38:29: case.submit success 959175
- ---------------------------------------------------
-2024-07-23 12:38:37: case.run starting 959174
- ---------------------------------------------------
-2024-07-23 12:38:44: model execution starting 959174
- ---------------------------------------------------
-2024-07-24 09:18:47: model execution success 959174
- ---------------------------------------------------
-2024-07-24 09:18:47: case.run success 959174
- ---------------------------------------------------
-2024-07-24 10:29:41: xmlchange success <command> ./xmlchange STOP_N=4  </command>
- ---------------------------------------------------
-2024-07-24 10:30:03: xmlchange success <command> ./xmlchange CONTINUE_RUN=TRUe  </command>
- ---------------------------------------------------
-2024-07-24 10:30:06: xmlchange success <command> ./xmlchange CONTINUE_RUN=TRUE  </command>
- ---------------------------------------------------
-2024-07-24 10:30:35: case.submit starting 959615
- ---------------------------------------------------
-2024-07-24 10:30:35: case.submit success 959615
- ---------------------------------------------------
-2024-07-24 10:30:50: case.run starting 959614
- ---------------------------------------------------
-2024-07-24 10:31:01: model execution starting 959614
+2024-11-16 01:01:53: st_archive success 1032203
  ---------------------------------------------------

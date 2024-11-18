@@ -46,7 +46,7 @@
     namelist group cpl_flds_inparm.
     </desc>
     </entry>
-    <entry id="DMS_EMIS_OCN" value="TRUE">
+    <entry id="DMS_EMIS_OCN" value="FALSE">
       <type>logical</type>
       <valid_values>TRUE,FALSE</valid_values>
       <desc>
@@ -54,7 +54,7 @@
       Currently this is only available with BLOM ocean component.
     </desc>
     </entry>
-    <entry id="BRF_EMIS_OCN" value="TRUE">
+    <entry id="BRF_EMIS_OCN" value="FALSE">
       <type>logical</type>
       <valid_values>TRUE,FALSE</valid_values>
       <desc>
@@ -273,7 +273,7 @@
     <entry id="START_TOD" value="0">
       <type>integer</type>
       <desc>
-      Run start time-of-day
+      Run start time-of-day, units are seconds with values from 0 to 86400.
     </desc>
     </entry>
     <entry id="STOP_OPTION" value="nyears">
@@ -283,7 +283,7 @@
       Sets the run length along with STOP_N and STOP_DATE
     </desc>
     </entry>
-    <entry id="STOP_N" value="4">
+    <entry id="STOP_N" value="7">
       <type>integer</type>
       <desc>
       Provides a numerical count for $STOP_OPTION.
@@ -405,7 +405,7 @@
       <valid_values>TRUE,FALSE</valid_values>
       <desc>Logical to determine whether run has been submitted with the submit script or not</desc>
     </entry>
-    <entry id="JOB_IDS" value="case.run:959614, case.st_archive:959615">
+    <entry id="JOB_IDS" value="case.run:1032202, case.st_archive:1032203">
       <type>char</type>
       <desc>List of job ids for most recent case.submit</desc>
     </entry>
@@ -547,7 +547,7 @@
       <desc>Longitude of grid location, in single column mode interpolate datasets to this location
           in single point mode assume all datasets are at this location</desc>
     </entry>
-    <entry id="PTS_DOMAINFILE" value="$DIN_LOC_ROOT/share/domains/domain.lnd.fv0.9x1.25_gx1v7.151020.nc">
+    <entry id="PTS_DOMAINFILE" value="UNSET">
       <type>char</type>
       <desc>used only if if PTS_LAT and PTS_LON are greater than or
           equal to 0.  If this is the case then if PTS_DOMAINFILE is not
@@ -567,7 +567,7 @@
       <type>char</type>
       <desc>atm mesh file (full pathname)</desc>
     </entry>
-    <entry id="LND_DOMAIN_MESH" value="$DIN_LOC_ROOT/share/meshes/fv0.9x1.25_141008_polemod_ESMFmesh.nc">
+    <entry id="LND_DOMAIN_MESH" value="$DIN_LOC_ROOT/share/meshes/ne30pg3_ESMFmesh_cdf5_c20211018.nc">
       <type>char</type>
       <desc>lnd mesh file (full pathname)</desc>
     </entry>
@@ -610,6 +610,14 @@
     <entry id="ROF2OCN_ICE_RMAPNAME" value="cpl/cpl6/map_r05_to_tnx1v4_e1000r300_170609.nc">
       <type>char</type>
       <desc>rof2ocn runoff mapping file</desc>
+    </entry>
+    <entry id="OCN2WAV_SMAPNAME" value="unset">
+      <type>char</type>
+      <desc>ocn2wav state mapping file</desc>
+    </entry>
+    <entry id="WAV2OCN_SMAPNAME" value="unset">
+      <type>char</type>
+      <desc>wav2ocn state mapping file</desc>
     </entry>
     <entry id="EPS_FRAC" value="1.0e-02">
       <type>char</type>
@@ -697,7 +705,7 @@
     </entry>
   </group>
   <group id="run_dout">
-    <entry id="DOUT_S_ROOT" value="/nird/datalake/NS2345K/mvertens/twin_hybrid_coare.20240723">
+    <entry id="DOUT_S_ROOT" value="/cluster/work/users/$USER/archive/$CASE">
       <type>char</type>
       <desc>Root directory for short term archiving. This directory must be visible to compute nodes.</desc>
     </entry>
@@ -804,15 +812,15 @@
     https://www.unidata.ucar.edu/software/netcdf/docs/data_type.html
     </desc>
       <values>
-        <value compclass="ATM">64bit_offset</value>
-        <value compclass="CPL">64bit_offset</value>
-        <value compclass="OCN">64bit_offset</value>
-        <value compclass="WAV">64bit_offset</value>
-        <value compclass="GLC">64bit_offset</value>
-        <value compclass="ICE">64bit_offset</value>
-        <value compclass="ROF">64bit_offset</value>
-        <value compclass="LND">64bit_offset</value>
-        <value compclass="ESP">64bit_offset</value>
+        <value compclass="ATM">64bit_data</value>
+        <value compclass="CPL">64bit_data</value>
+        <value compclass="OCN">64bit_data</value>
+        <value compclass="WAV">64bit_data</value>
+        <value compclass="GLC">64bit_data</value>
+        <value compclass="ICE">64bit_data</value>
+        <value compclass="ROF">64bit_data</value>
+        <value compclass="LND">64bit_data</value>
+        <value compclass="ESP">64bit_data</value>
       </values>
     </entry>
     <entry id="PIO_STRIDE">
@@ -969,6 +977,11 @@
       Default is off
     </desc>
     </entry>
+    <entry id="LND_SETS_DUST_EMIS_DRV_FLDS" value="TRUE">
+      <type>logical</type>
+      <valid_values>TRUE,FALSE</valid_values>
+      <desc>If CTSM will set the dust settings in drv_flds_in (TRUE), or if ATM (i.e. CAM) will - DO NOT EDIT (set by compset name)</desc>
+    </entry>
   </group>
   <group id="med_history">
     <entry id="HIST_OPTION" value="never">
@@ -988,7 +1001,7 @@
     </entry>
   </group>
   <group id="run_budgets">
-    <entry id="BUDGETS" value="FALSE">
+    <entry id="BUDGETS" value="TRUE">
       <type>logical</type>
       <valid_values>TRUE,FALSE</valid_values>
       <desc>logical that turns on diagnostic budgets for driver</desc>
@@ -1078,7 +1091,7 @@
     </entry>
   </group>
   <group id="run_component_ctsm">
-    <entry id="LND_TUNING_MODE" value="clm5_1_cam6.0">
+    <entry id="LND_TUNING_MODE" value="clm6_0_cam6.0">
       <type>char</type>
       <desc>Tuning parameters and initial conditions should be optimized for what CLM model version and what meteorlogical forcing combination?
           Options for all combinations of CLM physics and atm forcing are given. The buildnml and namelist_defaults will narrow it down to the ones
@@ -1096,9 +1109,9 @@
                ERA5   (not tuned)
           Other atm forcing options are invalid to run CLM and will result in an error.
     </desc>
-      <valid_values>clm5_0_cam6.0,clm5_0_cam7.0,clm5.0_cam5.0,clm5.0_cam4.0,clm5_0_GSWP3v1,clm5_0_CRUv7,clm5_0_QIAN,clm5_0_1PT,clm5_0_NLDAS2,clm5_0_ERA5,clm4_5_CRUv7,clm4_5_GSWP3v1,clm4_5_QIAN,clm4_5_cam6.0,clm4_5_cam7.0,clm4_5_cam5.0,clm4_5_cam4.0,clm4_5_1PT,clm4_5_NLDAS2,clm4_5_ERA5,clm5_1_CRUv7,clm5_1_GSWP3v1,clm5_1_cam6.0,clm5_1_QIAN,clm5_1_1PT,clm5_1_NLDAS2,clm5_1_ERA5,clm6_0_CRUv7,clm6_0_GSWP3v1,clm6_0_cam6.0,clm6_0_cam7.0,clm6_0_cam5.0,clm6_0_cam4.0,clm6_0_QIAN,clm6_0_1PT,clm6_0_NLDAS2,clm6_0_ERA5</valid_values>
+      <valid_values>clm5_0_cam6.0,clm5_0_cam7.0,clm5_0_cam5.0,clm5_0_cam4.0,clm5_0_GSWP3v1,clm5_0_CRUv7,clm5_0_QIAN,clm5_0_1PT,clm5_0_NLDAS2,clm5_0_ERA5,clm4_5_CRUv7,clm4_5_GSWP3v1,clm4_5_QIAN,clm4_5_cam6.0,clm4_5_cam7.0,clm4_5_cam5.0,clm4_5_cam4.0,clm4_5_1PT,clm4_5_NLDAS2,clm4_5_ERA5,clm5_1_CRUv7,clm5_1_GSWP3v1,clm5_1_cam6.0,clm5_1_QIAN,clm5_1_1PT,clm5_1_NLDAS2,clm5_1_ERA5,clm6_0_CRUv7,clm6_0_GSWP3v1,clm6_0_cam6.0,clm6_0_cam7.0,clm6_0_cam5.0,clm6_0_cam4.0,clm6_0_QIAN,clm6_0_1PT,clm6_0_NLDAS2,clm6_0_ERA5</valid_values>
     </entry>
-    <entry id="CLM_PHYSICS_VERSION" value="clm5_1">
+    <entry id="CLM_PHYSICS_VERSION" value="clm6_0">
       <type>char</type>
       <valid_values>clm4_5,clm5_0,clm5_1,clm6_0</valid_values>
       <desc>Overall physics version to use.
@@ -1130,7 +1143,7 @@
       This is normally set by the component set. This is an advanced flag and should only be
       used by expert users.</desc>
     </entry>
-    <entry id="CLM_BLDNML_OPTS" value="-bgc sp">
+    <entry id="CLM_BLDNML_OPTS" value="-bgc fates -no-megan">
       <type>char</type>
       <desc>CLM build-namelist options</desc>
     </entry>
@@ -1158,8 +1171,8 @@
     </entry>
     <entry id="CLM_ACCELERATED_SPINUP" value="off">
       <type>char</type>
-      <valid_values>on,off</valid_values>
-      <desc>Turn on any settings for accellerating the model spinup.
+      <valid_values>on,sasu,off</valid_values>
+      <desc>Turn on any settings for accellerating the model spinup. SASU is to run the Semi-Analytic Spin-Up with the CN soil matrix method.
     </desc>
     </entry>
     <entry id="CLM_USRDAT_NAME" value="UNSET">
@@ -1170,7 +1183,8 @@
       to create_newcase.  The default value is UNSET.
       For NEON cases, this can be set to either NEON or NEON.PRISM, the latter of which would
       use PRISM precipitation instead of the default NEON precipitation. NEON cases then also
-      use the variable NEONSITE to specify the exact site.</desc>
+      use the variable NEONSITE to specify the exact site. PLUMBER cases use the variable 
+      PLUMBER2SITE to specify the exact site.</desc>
     </entry>
     <entry id="CLM_USRDAT_DIR" value="UNSET">
       <type>char</type>
@@ -1187,7 +1201,7 @@
       cold start (finidat will be set to blanks).
       A value of on forces the model to spin up from a cold-start
       (arbitrary initial conditions). Setting this value in the xml file will take
-      precedence over any settings for finidat in the $CASEROOT/user_nl_ctsm file.</desc>
+      precedence over any settings for finidat in the $CASEROOT/user_nl_clm file.</desc>
     </entry>
     <entry id="NEONSITE">
       <type>char</type>
@@ -1222,6 +1236,23 @@
       <type>char</type>
       <valid_values>v1,v2,v3,latest</valid_values>
       <desc>Version id of Neon data</desc>
+    </entry>
+    <entry id="PLUMBER2SITE">
+      <type>char</type>
+      <valid_values>
+      AR-SLu,AT-Neu,AU-ASM,AU-Cow,AU-Cpr,AU-Ctr,AU-Cum,AU-DaP,AU-DaS,AU-Dry,AU-Emr,AU-Gin,AU-GWW,AU-How,AU-Lit,
+      AU-Otw,AU-Rig,AU-Rob,AU-Sam,AU-Stp,AU-TTE,AU-Tum,AU-Whr,AU-Wrr,AU-Ync,BE-Bra,BE-Lon,BE-Vie,BR-Sa3,BW-Ma1,CA-NS1,
+      CA-NS2,CA-NS4,CA-NS5,CA-NS6,CA-NS7,CA-Qcu,CA-Qfo,CA-SF1,CA-SF2,CA-SF3,CH-Cha,CH-Dav,CH-Fru,CH-Oe1,CN-Cha,CN-Cng,
+      CN-Dan,CN-Din,CN-Du2,CN-HaM,CN-Qia,CZ-wet,DE-Bay,DE-Geb,DE-Gri,DE-Hai,DE-Kli,DE-Meh,DE-Obe,DE-Seh,DE-SfN,DE-Tha,
+      DE-Wet,DK-Fou,DK-Lva,DK-Ris,DK-Sor,DK-ZaH,ES-ES1,ES-ES2,ES-LgS,ES-LMa,ES-VDA,FI-Hyy,FI-Kaa,FI-Lom,FI-Sod,FR-Fon,
+      FR-Gri,FR-Hes,FR-LBr,FR-Lq1,FR-Lq2,FR-Pue,GF-Guy,HU-Bug,ID-Pag,IE-Ca1,IE-Dri,IT-Amp,IT-BCi,IT-CA1,IT-CA2,IT-CA3,
+      IT-Col,IT-Cpz,IT-Isp,IT-Lav,IT-LMa,IT-Mal,IT-MBo,IT-Noe,IT-Non,IT-PT1,IT-Ren,IT-Ro1,IT-Ro2,IT-SR2,IT-SRo,JP-SMF,
+      NL-Ca1,NL-Hor,NL-Loo,PL-wet,PT-Esp,PT-Mi1,PT-Mi2,RU-Che,RU-Fyo,RU-Zot,SD-Dem,SE-Deg,UK-Gri,UK-Ham,UK-PL3,US-AR1,
+      US-AR2,US-ARM,US-Aud,US-Bar,US-Bkg,US-Blo,US-Bo1,US-Cop,US-FPe,US-GLE,US-Goo,US-Ha1,US-Ho1,US-KS2,US-Los,US-Me2,
+      US-Me4,US-Me6,US-MMS,US-MOz,US-Myb,US-Ne1,US-Ne2,US-Ne3,US-NR1,US-PFa,US-Prr,US-SP1,US-SP2,US-SP3,US-SRG,US-SRM,
+      US-Syv,US-Ton,US-Tw4,US-Twt,US-UMB,US-Var,US-WCr,US-Whs,US-Wkg,ZA-Kru,ZM-Mon,
+    </valid_values>
+      <desc>Name of site for PLUMBER tower data</desc>
     </entry>
   </group>
   <group id="build_component_cice">
@@ -1283,7 +1314,7 @@
     <entry id="HAMOCC_EXTNCYCLE" value="FALSE">
       <type>logical</type>
       <valid_values>TRUE,FALSE</valid_values>
-      <desc>Set preprocessor option to activate the extended nitrogen cycle code. Requires module ecosys</desc>
+      <desc>Set namelist option to activate the extended nitrogen cycle code. Requires module ecosys</desc>
     </entry>
     <entry id="HAMOCC_ATMNDEPC" value="FALSE">
       <type>logical</type>
@@ -1298,40 +1329,45 @@
     <entry id="HAMOCC_M4AGO" value="FALSE">
       <type>logical</type>
       <valid_values>TRUE,FALSE</valid_values>
-      <desc>Set preprocessor option to activate the M4AGO sinking scheme. Requires module ecosys</desc>
+      <desc>Set namelist option to activate the M4AGO sinking scheme. Requires module ecosys</desc>
+    </entry>
+    <entry id="HAMOCC_PREF_TRACERS" value="TRUE">
+      <type>logical</type>
+      <valid_values>TRUE,FALSE</valid_values>
+      <desc>Set namelist option to activate the preformed tracer code. Requires module ecosys</desc>
     </entry>
     <entry id="HAMOCC_CISO" value="FALSE">
       <type>logical</type>
       <valid_values>TRUE,FALSE</valid_values>
-      <desc>Set preprocessor option to activate the carbon isotope code. Requires module ecosys</desc>
+      <desc>Set namelist option to activate the carbon isotope code. Requires module ecosys</desc>
     </entry>
     <entry id="HAMOCC_SEDBYPASS" value="FALSE">
       <type>logical</type>
       <valid_values>TRUE,FALSE</valid_values>
-      <desc>Set preprocessor option to bypass the sediment code. Requires module ecosys</desc>
+      <desc>Set namelist option to bypass the sediment code. Requires module ecosys</desc>
     </entry>
     <entry id="HAMOCC_SEDSPINUP" value="TRUE">
       <type>logical</type>
       <valid_values>TRUE,FALSE</valid_values>
-      <desc>Activate sediment spinup. HAMOCC_SEDSPINUP_YR_START and HAMOCC_SEDSPINUP_YR_END 
+      <desc>Activate sediment spinup. HAMOCC_SEDSPINUP_YR_START and HAMOCC_SEDSPINUP_YR_END
       need to be set to valid values for this option to take effect. Requires module ecosys</desc>
     </entry>
     <entry id="HAMOCC_SEDSPINUP_YR_START" value="1">
       <type>integer</type>
       <valid_values/>
-      <desc>Set start year for HAMOCC sediment spin-up if HAMOCC_SEDSPINUP == TRUE. 
+      <desc>Set start year for HAMOCC sediment spin-up if HAMOCC_SEDSPINUP == TRUE.
       Requires module ecosys</desc>
     </entry>
     <entry id="HAMOCC_SEDSPINUP_YR_END" value="800">
       <type>integer</type>
       <valid_values/>
-      <desc>Set end year for HAMOCC sediment spin-up if HAMOCC_SEDSPINUP == TRUE. 
+      <desc>Set end year for HAMOCC sediment spin-up if HAMOCC_SEDSPINUP == TRUE.
       Requires module ecosys</desc>
     </entry>
     <entry id="HAMOCC_SEDSPINUP_NCYCLE" value="20">
       <type>integer</type>
       <valid_values/>
-      <desc>Set the number of sub-cycles for HAMOCC sediment spin-up if HAMOCC_SEDSPINUP == TRUE. 
+      <desc>Set the number of sub-cycles for HAMOCC sediment spin-up if HAMOCC_SEDSPINUP == TRUE.
       Requires module ecosys</desc>
     </entry>
   </group>

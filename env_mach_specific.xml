@@ -15,7 +15,7 @@
       <desc>redirect for job output</desc>
     </entry>
   </group>
-  <module_system type="module">
+  <module_system type="module" allow_error="true">
     <init_path lang="perl">$ENV{LMOD_PKG}/init/perl</init_path>
     <init_path lang="python">$ENV{LMOD_PKG}/init/env_modules_python.py</init_path>
     <init_path lang="csh">$ENV{LMOD_PKG}/init/csh</init_path>
@@ -28,19 +28,13 @@
       <command name="--force purge"/>
       <command name="load">StdEnv</command>
       <command name="use">/cluster/shared/noresm/eb_mods/modules/all</command>
-      <command name="load">ESMF/8.4.1-iomkl-2021b-ParallelIO-2.5.10</command>
-      <command name="load">CMake/3.21.1-GCCcore-11.2.0</command>
-      <command name="load">Python/3.9.6-GCCcore-11.2.0</command>
-      <command name="load">ParMETIS/4.0.3-iompi-2021b</command>
-    </modules>
-    <modules compiler="intel" mpilib="impi">
-      <command name="--force purge"/>
-      <command name="load">StdEnv</command>
-      <command name="use">/cluster/shared/noresm/eb_mods/modules/all</command>
-      <command name="load">ESMF/8.4.1-intel-2021b-ParallelIO-2.5.10</command>
-      <command name="load">CMake/3.21.1-GCCcore-11.2.0</command>
-      <command name="load">Python/3.9.6-GCCcore-11.2.0</command>
-      <command name="load">ParMETIS/4.0.3-iimpi-2021b</command>
+      <command name="load">ESMF/8.4.2-iomkl-2022a-ParallelIO-2.5.10</command>
+      <command name="load">Python/3.11.3-GCCcore-12.3.0</command>
+      <command name="load">CMake/3.26.3-GCCcore-12.3.0</command>
+      <command name="load">ParMETIS/4.0.3-iompi-2022a</command>
+      <command name="load">git/2.41.0-GCCcore-12.3.0-nodocs</command>
+      <command name="load">XML-LibXML/2.0209-GCCcore-12.3.0</command>
+      <command name="load">hpcx/2.20</command>
     </modules>
   </module_system>
   <environment_variables>
@@ -75,6 +69,6 @@
     <executable/>
   </mpirun>
   <mpirun mpilib="default">
-    <executable>srun</executable>
+    <executable>srun --kill-on-bad-exit --label</executable>
   </mpirun>
 </file>

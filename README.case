@@ -1,44 +1,46 @@
-2024-07-23 11:00:27: ./create_newcase --case /cluster/home/mvertens/cases/n1850.ne30_f09_tn14.twin_hybrid_coare.20240723 --compset N1850 --res ne30pg3_f09_tn14 --project nn9039k --run-unsupported
+2024-11-11 21:21:30: ./create_newcase --case /cluster/work/users/kjetisaa//n1850.ne30_tn14.hybrid_fatessp.20241111 --compset 1850_CAM%DEV%LT%NORESM%CAMoslo_CLM60%FATES-SP_CICE_BLOM%ECO_MOSART_DGLC%NOEVOLVE_SWAV_SESP --res ne30pg3_tn14 --project nn9039k --run-unsupported --mach betzy
  ---------------------------------------------------
-2024-07-23 11:00:27: Compset longname is 1850_CAM%DEV%LT%NORESM%CAMoslo_CLM51%SP_CICE_BLOM%ECO_MOSART_DGLC%NOEVOLVE_SWAV_SESP
+2024-11-11 21:21:30: Compset longname is 1850_CAM%DEV%LT%NORESM%CAMoslo_CLM60%FATES-SP_CICE_BLOM%ECO_MOSART_DGLC%NOEVOLVE_SWAV_SESP
  ---------------------------------------------------
-2024-07-23 11:00:27: Compset specification file is /cluster/projects/nn9560k/mvertens/src/noresm2_5_alpha03/cime_config/config_compsets.xml
+2024-11-11 21:21:30: Compset specification file is /cluster/work/users/kjetisaa/NorESM_alpha07_fatessp_newradiation/cime_config/config_compsets.xml
  ---------------------------------------------------
-2024-07-23 11:00:27: Pes     specification file is /cluster/projects/nn9560k/mvertens/src/noresm2_5_alpha03/cime_config/config_pes.xml
+2024-11-11 21:21:30: Pes     specification file is /cluster/work/users/kjetisaa/NorESM_alpha07_fatessp_newradiation/cime_config/config_pes.xml
  ---------------------------------------------------
-2024-07-23 11:00:27: Forcing is 1850
+2024-11-11 21:21:30: Forcing is 1850
  ---------------------------------------------------
-2024-07-23 11:00:27: Using 1 coupler instances
+2024-11-11 21:21:30: Using 1 coupler instances
  ---------------------------------------------------
-2024-07-23 11:00:27: Component ATM is CAM7 development physics:CAM low top model CAM-Nor physics and dynamics differences :
+2024-11-11 21:21:30: Component ATM is CAM7 development physics:CAM low top model CAM-Nor physics and dynamics differences :
  ---------------------------------------------------
-2024-07-23 11:00:27: ATM_GRID is ne30np4.pg3
+2024-11-11 21:21:30: ATM_GRID is ne30np4.pg3
  ---------------------------------------------------
-2024-07-23 11:00:27: Component LND is clm5.1:Satellite phenology:
+2024-11-11 21:21:30: Component LND is clm6.0:Satellite phenology with FATES (Functionally Assembled Terrestrial Ecosystem Simulator) Ecosystem Demography model: 
  ---------------------------------------------------
-2024-07-23 11:00:27: LND_GRID is 0.9x1.25
+2024-11-11 21:21:30: LND_GRID is ne30np4.pg3
  ---------------------------------------------------
-2024-07-23 11:00:27: Component ICE is Sea ICE (cice) model version 6
+2024-11-11 21:21:30: This component includes user_mods /cluster/work/users/kjetisaa/NorESM_alpha07_fatessp_newradiation/components/clm//cime_config/usermods_dirs/fates_sp
  ---------------------------------------------------
-2024-07-23 11:00:27: ICE_GRID is tnx1v4
+2024-11-11 21:21:30: Component ICE is Sea ICE (cice) model version 6
  ---------------------------------------------------
-2024-07-23 11:00:27: Component OCN is BLOM default:BLOM/Ecosystem:
+2024-11-11 21:21:30: ICE_GRID is tnx1v4
  ---------------------------------------------------
-2024-07-23 11:00:27: OCN_GRID is tnx1v4
+2024-11-11 21:21:30: Component OCN is BLOM default:BLOM/Ecosystem:
  ---------------------------------------------------
-2024-07-23 11:00:27: Component ROF is MOSART: MOdel for Scale Adaptive River Transport
+2024-11-11 21:21:30: OCN_GRID is tnx1v4
  ---------------------------------------------------
-2024-07-23 11:00:27: ROF_GRID is r05
+2024-11-11 21:21:30: Component ROF is MOSART: MOdel for Scale Adaptive River Transport
  ---------------------------------------------------
-2024-07-23 11:00:27: Component GLC is Data glc model (DGLC) no evolve mode 
+2024-11-11 21:21:30: ROF_GRID is r05
  ---------------------------------------------------
-2024-07-23 11:00:27: GLC_GRID is gris4
+2024-11-11 21:21:30: Component GLC is Data glc model (DGLC) no evolve mode 
  ---------------------------------------------------
-2024-07-23 11:00:27: Component WAV is Stub wave component
+2024-11-11 21:21:30: GLC_GRID is gris4
  ---------------------------------------------------
-2024-07-23 11:00:27: WAV_GRID is null
+2024-11-11 21:21:30: Component WAV is Stub wave component
  ---------------------------------------------------
-2024-07-23 11:00:27: Component ESP is Stub external system processing (ESP) component
+2024-11-11 21:21:30: WAV_GRID is null
  ---------------------------------------------------
-2024-07-23 11:00:27: ESP_GRID is None
+2024-11-11 21:21:30: Component ESP is Stub external system processing (ESP) component
+ ---------------------------------------------------
+2024-11-11 21:21:30: ESP_GRID is None
  ---------------------------------------------------

@@ -6,6 +6,7 @@ runSeq::
   MED med_phases_aofluxes_run
   MED med_phases_prep_ocn_accum
   MED med_phases_ocnalb_run
+  MED med_phases_diag_ocn
 @@3600 
   MED med_phases_prep_ocn_avg
   MED -> OCN :remapMethod=redist
@@ -18,6 +19,10 @@ runSeq::
   LND
   LND -> MED :remapMethod=redist
   MED med_phases_post_lnd
+  MED med_phases_diag_lnd
+  MED med_phases_diag_rof
+  MED med_phases_diag_ice_ice2med
+  MED med_phases_diag_glc
   ICE -> MED :remapMethod=redist
   MED med_phases_post_ice
   MED med_phases_prep_atm
@@ -25,6 +30,10 @@ runSeq::
   ATM
   ATM -> MED :remapMethod=redist
   MED med_phases_post_atm
+  MED med_phases_diag_atm
+  MED med_phases_diag_ice_med2ice
+  MED med_phases_diag_accum
+  MED med_phases_diag_print
 @ 
   OCN
   OCN -> MED :remapMethod=redist
