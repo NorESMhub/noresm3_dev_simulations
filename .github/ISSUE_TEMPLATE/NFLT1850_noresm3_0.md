@@ -1,10 +1,10 @@
 ---
-name: NorESM2.5 - Fully coupled pre-industrial (N1850)
+name: NorESM3.0 - AMIP pre-industrial (NF1850)
 about: Documenting information about a NorESM simulation.
 title: Enter casename (shortcompsetname.grid.codeversion.somekindofinfo.yyyymmdd)
 labels:
-- 'N1850'
-- 'NorESM2.5'
+- 'NF1850'
+- 'NorESM3.0'
 assignees: ''
 ---
 **Purpose:**
@@ -27,7 +27,7 @@ ___
 https://github.com/NorESMhub/noresm_simulations/tree/$CASE
 ___
 **Code version on github (either NorESMhub or user's fork):**
-- On github: https://github.com/NorESMhub/noresm/tree/<code_version>
+- https://github.com/NorESMhub/noresm/tree/<code_version>
 - https://github.com/username/noresm/tree/<code_version>
 ___
 **Diagnostics:**
