@@ -1,10 +1,10 @@
 ---
-name: NorESM3.0 - Fully coupled pre-industrial (NLT1850)
+name: NorESM3.0 - Fully coupled pre-industrial (N1850)
 about: Documenting information about a NorESM simulation.
 title: Enter casename (shortcompsetname.grid.codeversion.somekindofinfo.yyyymmdd)
 labels:
 - 'N1850'
-- 'NorESM-3.0'
+- 'NorESM3.0'
 assignees: ''
 ---
 **Purpose:**
@@ -19,6 +19,12 @@ ___
 **Model grid long name**
 
 ___
+**Start year:**
+
+___
+**End year:**
+
+___
 **Case directory:**
 - Locally on betzy (if still available):
 `/projects/NS9560K/noresm3/cases/$user/$CASE`
@@ -28,7 +34,7 @@ https://github.com/NorESMhub/noresm_simulations/tree/$CASE
 ___
 **Code version on github (either NorESMhub or user's fork):**
 - On github: https://github.com/NorESMhub/noresm/tree/<code_version>
-- https://github.com/username/noresm/tree/<code_version>
+- User Fork: https://github.com/username/noresm/tree/<code_version>
 ___
 **Diagnostics:**
 - Diags (if available):
@@ -42,6 +48,6 @@ ___
 - CAM Climos:
 ___
 **Contacts:**
-
+(responsible person)
 ___
 **Extra details:**

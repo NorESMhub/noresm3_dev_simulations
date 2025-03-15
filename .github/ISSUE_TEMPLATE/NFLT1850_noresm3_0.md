@@ -19,6 +19,12 @@ ___
 **Model grid long name**
 
 ___
+**Start year:**
+
+___
+**End year:**
+
+___
 **Case directory:**
 - Locally on betzy (if still available):
 `/projects/NS9560K/noresm3/cases/$user/$CASE`
@@ -27,8 +33,8 @@ ___
 https://github.com/NorESMhub/noresm_simulations/tree/$CASE
 ___
 **Code version on github (either NorESMhub or user's fork):**
-- https://github.com/NorESMhub/noresm/tree/<code_version>
-- https://github.com/username/noresm/tree/<code_version>
+- On github: https://github.com/NorESMhub/noresm/tree/<code_version>
+- User Fork: https://github.com/username/noresm/tree/<code_version>
 ___
 **Diagnostics:**
 - Diags (if available):
@@ -42,6 +48,6 @@ ___
 - CAM Climos:
 ___
 **Contacts:**
-
+(responsible person)
 ___
 **Extra details:**
