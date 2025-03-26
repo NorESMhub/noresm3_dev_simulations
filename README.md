@@ -7,6 +7,10 @@ The idea for this repository was stolen shamelessly from the [NCAR amwg_dev repo
 ## To start a new development simulation, follow the Wiki instructions
 https://github.com/NorESMhub/noresm3_dev_simulations/wiki
 
+- Workflow for including development in NorESM tag version
+- Workflow for running coupled NorESM3_0_alphaXX simulations on Betzy
+- Workflow for producing and managing diagnostics output
+
 ## Discussions
 Discussions relevant to NorESM3 development and preparation for CMIP7 could be posted under [Discussions](https://github.com/NorESMhub/noresm3_dev_simulations/discussions).
 
