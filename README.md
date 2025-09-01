@@ -16,3 +16,8 @@ Discussions relevant to NorESM3 development and preparation for CMIP7 could be p
 
 - Discussions provide you with the ability to directly engage with other developers while staying on GitHub.
 - To ensure that the conversation remains productive and helpful, please keep your discussions organized by using relevant titles, applying labels, and refraining from mixing topics.
+
+## Documentation
+The `doc/` folder is intended for documentation that is relevant for the model development. Once the NorESM3 model is finalized, a more extensive documentation will be provided in the [NorESM-docs](https://github.com/NorESMhub/NorESM-docs) repository.
+
+- [Model performance for different PE layouts](https://github.com/NorESMhub/noresm3_dev_simulations/blob/main/doc/NorESM3_performance.csv)
