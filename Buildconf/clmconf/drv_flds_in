@@ -1,0 +1,24 @@
+&drydep_inparm
+ dep_data_file = '/cluster/shared/noresm/inputdata/atm/cam/chem/trop_mozart/dvel/dep_data_c20221208.nc'
+ drydep_list = 'DMS','H2O2','H2SO4','SO2'
+/
+&megan_emis_nl
+ megan_factors_file = '/cluster/shared/noresm/inputdata/atm/cam/chem/trop_mozart/emis/megan21_emis_factors_78pft_c20161108.nc'
+ megan_specifier = 'isoprene = isoprene', 'monoterp = myrcene + sabinene + limonene+ carene_3 + ocimene_t_b + pinene_b + pinene_a'
+/
+&fire_emis_nl
+/
+&carma_inparm
+/
+&dust_emis_inparm
+ dust_emis_method = 'Leung_2023'
+/
+&lnd2rof_tracers_inparm
+/
+!#--------------------------------------------------------------------------------------------------------------------------
+!# drv_flds_in:: Comment:
+!# This namelist was created using the following command-line:
+!#     /cluster/work/users/kjetisaa/NorESM_3_0_beta03a/components/clm/bld/CLM build-namelist -cimeroot /cluster/work/users/kjetisaa/NorESM_3_0_beta03a/cime -infile /cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10/Buildconf/clmconf/namelist -csmdata /cluster/shared/noresm/inputdata -inputdata /cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10/Buildconf/ctsm.input_data_list -ignore_ic_year -namelist &clm_inparm  start_ymd=00610101 /  -no-megan -use_case 1850_control -res ne16np4.pg3 -clm_start_type branch -envxml_dir /cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10 -configuration clm -structure standard -glc_nec 10 -co2_ppmv 284.7 -co2_type diagnostic -config /cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10/Buildconf/clmconf/config_cache.xml -driver nuopc -bgc fates -clm_accelerated_spinup off -lnd_tuning_mode clm6_0_cam7.0 -mask tnx1v4
+!# 
+!# For help on options use: /cluster/work/users/kjetisaa/NorESM_3_0_beta03a/components/clm/bld/CLM build-namelist -help
+!#--------------------------------------------------------------------------------------------------------------------------

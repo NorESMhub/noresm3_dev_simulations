@@ -1,0 +1,47 @@
+&comp_inparm 
+
+ cam_branch_file = 'n1850.ne16_tn14.noresm3_0_beta03_rafsipmasstonum.20250930.cam.r.0061-01-01-00000.nc'
+ dtime = 1800
+ 
+
+use_aerocom                = .false.
+
+interpolate_nlat           = 96
+
+interpolate_nlon           = 144
+
+interpolate_output         = .true.,.true.
+
+history_aerosol            = .false.
+
+zmconv_c0_lnd              =  0.0075D0
+
+zmconv_c0_ocn              =  0.0300D0
+
+zmconv_ke                  =  5.0E-6
+
+zmconv_ke_lnd              =  1.0E-5
+
+clim_modal_aero_top_press  =  1.D-4
+
+bndtvg                     = '/cluster/shared/noresm/inputdata/atm/cam/ggas/noaamisc.r8.nc'
+
+dust_emis_method           = 'Leung_2023'
+
+dust_emis_fact             = 6.1D0
+
+rafsip_on                  = .true.
+
+micro_mg_dcs               = 700.D-6
+
+clubb_c8                   =  5.3
+
+nhtfrq = 0, -24
+
+mfilt  = 1,   30 
+
+ndens  = 2,   2
+
+fincl2 = 'Z500', 'T850', 'U850', 'V850'
+
+/ 
