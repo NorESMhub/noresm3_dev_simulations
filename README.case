@@ -1,0 +1,38 @@
+2025-10-23 15:52:32: ./cime/scripts/create_newcase --case /cluster/projects/nn9560k/tomast/NorESM/cases/n1850.ne30_tn14.noresm3_0_beta03b-run2_yr001.20251023 --compset 1850_CAM70%LT%NORESM%CAMoslo_CLM60%FATES_CICE_BLOM%HYB%ECO_MOSART_DGLC%NOEVOLVE_SWAV_SESP --res ne30pg3_tn14 --project nn9560k --machine betzy --compiler intel --run-unsupported --user-mods-dir /cluster/projects/nn9560k/tomast/NorESM/src/noresm3_0_beta03b/cime_config/usermods_dirs/reduced_out_devsim/
+ ---------------------------------------------------
+2025-10-23 15:52:32: Compset longname is 1850_CAM70%LT%NORESM%CAMoslo_CLM60%FATES_CICE_BLOM%HYB%ECO_MOSART_DGLC%NOEVOLVE_SWAV_SESP
+ ---------------------------------------------------
+2025-10-23 15:52:32: Compset specification file is /cluster/projects/nn9560k/tomast/NorESM/src/noresm3_0_beta03b/cime_config/config_compsets.xml
+ ---------------------------------------------------
+2025-10-23 15:52:32: Pes     specification file is /cluster/projects/nn9560k/tomast/NorESM/src/noresm3_0_beta03b/cime_config/config_pes.xml
+ ---------------------------------------------------
+2025-10-23 15:52:32: Forcing is 1850
+ ---------------------------------------------------
+2025-10-23 15:52:32: Using 1 coupler instances
+ ---------------------------------------------------
+2025-10-23 15:52:32: Component ATM is CAM cam7 physics:CAM low top model CAM-Nor physics and dynamics differences :Use the Oslo Aero aerosol model with trop_mam_oslo chemistry :
+ ---------------------------------------------------
+2025-10-23 15:52:32: ATM_GRID is ne30np4.pg3
+ ---------------------------------------------------
+2025-10-23 15:52:32: Component LND is clm6.0:FATES (Functionally Assembled Terrestrial Ecosystem Simulator) Ecosystem Demography model: 
+ ---------------------------------------------------
+2025-10-23 15:52:32: LND_GRID is ne30np4.pg3
+ ---------------------------------------------------
+2025-10-23 15:52:32: Component ICE is Sea ICE (cice) model version 6
+ ---------------------------------------------------
+2025-10-23 15:52:32: ICE_GRID is tnx1v4
+ ---------------------------------------------------
+2025-10-23 15:52:32: Component OCN is BLOM default:BLOM/Ecosystem:
+ ---------------------------------------------------
+2025-10-23 15:52:32: OCN_GRID is tnx1v4
+ ---------------------------------------------------
+2025-10-23 15:52:32: Component ROF is MOSART: MOdel for Scale Adaptive River Transport
+ ---------------------------------------------------
+2025-10-23 15:52:32: ROF_GRID is r05
+ ---------------------------------------------------
+2025-10-23 15:52:32: Component GLC is Data glc model (DGLC) no evolve mode 
+ ---------------------------------------------------
+2025-10-23 15:52:32: GLC_GRID is gris4d
+ ---------------------------------------------------
+2025-10-23 15:52:32: ESP_GRID is None
+ ---------------------------------------------------

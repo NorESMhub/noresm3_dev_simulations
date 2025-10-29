@@ -1,0 +1,24 @@
+&drydep_inparm
+ dep_data_file = '/cluster/shared/noresm/inputdata/atm/cam/chem/trop_mozart/dvel/dep_data_c20221208.nc'
+ drydep_list = 'DMS','H2O2','H2SO4','SO2'
+/
+&megan_emis_nl
+ megan_factors_file = '/cluster/shared/noresm/inputdata/atm/cam/chem/trop_mozart/emis/megan21_emis_factors_78pft_c20161108.nc'
+ megan_specifier = 'isoprene = isoprene', 'monoterp = myrcene + sabinene + limonene+ carene_3 + ocimene_t_b + pinene_b + pinene_a'
+/
+&fire_emis_nl
+/
+&carma_inparm
+/
+&dust_emis_inparm
+ dust_emis_method = 'Leung_2023'
+/
+&lnd2rof_tracers_inparm
+/
+!#--------------------------------------------------------------------------------------------------------------------------
+!# drv_flds_in:: Comment:
+!# This namelist was created using the following command-line:
+!#     /cluster/projects/nn9560k/tomast/NorESM/src/noresm3_0_beta03b/components/clm/bld/CLM build-namelist -cimeroot /cluster/projects/nn9560k/tomast/NorESM/src/noresm3_0_beta03b/cime -infile /cluster/projects/nn9560k/tomast/NorESM/cases/n1850.ne30_tn14.noresm3_0_beta03b-run2_yr001.20251023/Buildconf/clmconf/namelist -csmdata /cluster/shared/noresm/inputdata -inputdata /cluster/projects/nn9560k/tomast/NorESM/cases/n1850.ne30_tn14.noresm3_0_beta03b-run2_yr001.20251023/Buildconf/ctsm.input_data_list -ignore_ic_year -namelist &clm_inparm  start_ymd=00010101 /  -no-megan -use_case 1850_control -res ne30np4.pg3 -clm_start_type default -envxml_dir /cluster/projects/nn9560k/tomast/NorESM/cases/n1850.ne30_tn14.noresm3_0_beta03b-run2_yr001.20251023 -configuration clm -structure standard -glc_nec 10 -co2_ppmv 284.7 -co2_type diagnostic -config /cluster/projects/nn9560k/tomast/NorESM/cases/n1850.ne30_tn14.noresm3_0_beta03b-run2_yr001.20251023/Buildconf/clmconf/config_cache.xml -driver nuopc -bgc fates -nomeg -clm_accelerated_spinup off -lnd_tuning_mode clm6_0_cam7.0 -mask tnx1v4
+!# 
+!# For help on options use: /cluster/projects/nn9560k/tomast/NorESM/src/noresm3_0_beta03b/components/clm/bld/CLM build-namelist -help
+!#--------------------------------------------------------------------------------------------------------------------------
