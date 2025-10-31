@@ -238,13 +238,13 @@
       Reference directory containing RUN_REFCASE data - used for hybrid or branch runs
     </desc>
     </entry>
-    <entry id="RUN_REFCASE" value="n1850.ne16pg3_tn14.noresm3_0_beta03b.BLOMalbAndBrine.2025-10-24">
+    <entry id="RUN_REFCASE" value="n1850.ne16_tn14.noresm3_0_beta03_rafsipmasstonum.20250930">
       <type>char</type>
       <desc>
       Reference case for hybrid or branch runs
     </desc>
     </entry>
-    <entry id="RUN_REFDATE" value="0291-01-01">
+    <entry id="RUN_REFDATE" value="0061-01-01">
       <type>char</type>
       <desc>
       Reference date for hybrid or branch runs (yyyy-mm-dd)
@@ -264,7 +264,7 @@
       If TRUE, then the refcase data is prestaged into the executable directory
     </desc>
     </entry>
-    <entry id="RUN_STARTDATE" value="0291-01-01">
+    <entry id="RUN_STARTDATE" value="0061-01-01">
       <type>char</type>
       <desc>
       Run start date (yyyy-mm-dd). Only used for startup or hybrid runs.
@@ -316,7 +316,7 @@
       sets model restart write date with REST_OPTION and REST_N
     </desc>
     </entry>
-    <entry id="DRV_RESTART_POINTER" value="rpointer.cpl.0316-01-01-00000">
+    <entry id="DRV_RESTART_POINTER" value="rpointer.cpl.0121-01-01-00000">
       <type>char</type>
       <desc>
       Name of the restart pointer file, this can be used to restart from an
@@ -412,7 +412,7 @@
       <valid_values>TRUE,FALSE</valid_values>
       <desc>Logical to determine whether run has been submitted with the submit script or not</desc>
     </entry>
-    <entry id="JOB_IDS" value="case.run:1355764, case.st_archive:1355765, case.compress:1355766">
+    <entry id="JOB_IDS" value="case.run:1345917, case.st_archive:1345918, case.compress:1345919">
       <type>char</type>
       <desc>List of job ids for most recent case.submit</desc>
     </entry>
@@ -933,7 +933,7 @@
       <valid_values/>
       <desc> Number of model run - data assimilation steps to complete </desc>
     </entry>
-    <entry id="DATA_ASSIMILATION_SCRIPT" value="/cluster/work/users/kjetisaa/NorESM_3_0_beta03b/tools/rerun_noresm.py">
+    <entry id="DATA_ASSIMILATION_SCRIPT" value="/cluster/work/users/kjetisaa/NorESM_3_0_beta03a/tools/rerun_noresm.py">
       <type>char</type>
       <valid_values/>
       <desc>External script to be run after model completion</desc>

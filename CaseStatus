@@ -1,126 +1,254 @@
-2025-10-29 10:28:29: xmlchange success <command> ./xmlchange --force BLOM_OUTPUT_SIZE=spinup  </command>
+2025-10-10 15:48:47: xmlchange success <command> ./xmlchange --force BLOM_OUTPUT_SIZE=spinup  </command>
  ---------------------------------------------------
-2025-10-29 10:28:30: xmlchange success <command> ./xmlchange --force HAMOCC_OUTPUT_SIZE=spinup  </command>
+2025-10-10 15:48:47: xmlchange success <command> ./xmlchange --force HAMOCC_OUTPUT_SIZE=spinup  </command>
  ---------------------------------------------------
-2025-10-29 10:28:30: xmlchange success <command> ./xmlchange NTASKS=1536,NTASKS_OCN=500,NTASKS_ICE=768,NTASKS_LND=768,ROOTPE_OCN=1536,ROOTPE_LND=768  </command>
+2025-10-10 15:48:48: xmlchange success <command> ./xmlchange NTASKS=1536,NTASKS_OCN=500,NTASKS_ICE=768,NTASKS_LND=768,ROOTPE_OCN=1536,ROOTPE_LND=768  </command>
  ---------------------------------------------------
-2025-10-29 10:28:31: xmlchange success <command> ./xmlchange RUN_TYPE=branch  </command>
+2025-10-10 15:48:48: xmlchange success <command> ./xmlchange RUN_TYPE=branch  </command>
  ---------------------------------------------------
-2025-10-29 10:28:31: xmlchange success <command> ./xmlchange RUN_STARTDATE=0291-01-01,START_TOD=00000  </command>
+2025-10-10 15:48:48: xmlchange success <command> ./xmlchange RUN_STARTDATE=0061-01-01,START_TOD=00000  </command>
  ---------------------------------------------------
-2025-10-29 10:28:31: xmlchange success <command> ./xmlchange RUN_REFCASE=n1850.ne16pg3_tn14.noresm3_0_beta03b.BLOMalbAndBrine.2025-10-24  </command>
+2025-10-10 15:48:48: xmlchange success <command> ./xmlchange RUN_REFCASE=n1850.ne16_tn14.noresm3_0_beta03_rafsipmasstonum.20250930  </command>
  ---------------------------------------------------
-2025-10-29 10:28:32: xmlchange success <command> ./xmlchange RUN_REFDATE=0291-01-01,RUN_REFTOD=00000  </command>
+2025-10-10 15:48:48: xmlchange success <command> ./xmlchange RUN_REFDATE=0061-01-01,RUN_REFTOD=00000  </command>
  ---------------------------------------------------
-2025-10-29 10:28:32: xmlchange success <command> ./xmlchange GET_REFCASE=FALSE  </command>
+2025-10-10 15:48:49: xmlchange success <command> ./xmlchange GET_REFCASE=FALSE  </command>
  ---------------------------------------------------
-2025-10-29 10:28:32: xmlchange success <command> ./xmlchange DRV_RESTART_POINTER=rpointer.cpl.0291-01-01-00000  </command>
+2025-10-10 15:48:49: xmlchange success <command> ./xmlchange DRV_RESTART_POINTER=rpointer.cpl.0061-01-01-00000  </command>
  ---------------------------------------------------
-2025-10-29 10:28:33: xmlchange success <command> ./xmlchange STOP_OPTION=nyears  </command>
+2025-10-10 15:48:49: xmlchange success <command> ./xmlchange STOP_OPTION=nyears  </command>
  ---------------------------------------------------
-2025-10-29 10:28:33: xmlchange success <command> ./xmlchange STOP_N=5  </command>
+2025-10-10 15:48:49: xmlchange success <command> ./xmlchange STOP_N=5  </command>
  ---------------------------------------------------
-2025-10-29 10:28:33: xmlchange success <command> ./xmlchange REST_N=5  </command>
+2025-10-10 15:48:50: xmlchange success <command> ./xmlchange REST_N=5  </command>
  ---------------------------------------------------
-2025-10-29 10:28:34: xmlchange success <command> ./xmlchange RESUBMIT=9  </command>
+2025-10-10 15:48:50: xmlchange success <command> ./xmlchange RESUBMIT=4  </command>
  ---------------------------------------------------
-2025-10-29 10:28:34: xmlchange success <command> ./xmlchange REST_OPTION=nyears  </command>
+2025-10-10 15:48:50: xmlchange success <command> ./xmlchange REST_OPTION=nyears  </command>
  ---------------------------------------------------
-2025-10-29 10:28:35: xmlchange success <command> ./xmlchange DATA_ASSIMILATION_SCRIPT=/cluster/work/users/kjetisaa/NorESM_3_0_beta03b/tools/rerun_noresm.py  </command>
+2025-10-10 15:48:50: xmlchange success <command> ./xmlchange DATA_ASSIMILATION_SCRIPT=/cluster/work/users/kjetisaa/NorESM_3_0_beta03a/tools/rerun_noresm.py  </command>
  ---------------------------------------------------
-2025-10-29 10:28:35: xmlchange success <command> ./xmlchange DATA_ASSIMILATION_CYCLES=2  </command>
+2025-10-10 15:48:51: xmlchange success <command> ./xmlchange DATA_ASSIMILATION_CYCLES=2  </command>
  ---------------------------------------------------
-2025-10-29 10:28:35: xmlchange success <command> ./xmlchange --subgroup case.run JOB_WALLCLOCK_TIME=48:00:00  </command>
+2025-10-10 15:48:51: xmlchange success <command> ./xmlchange --subgroup case.run JOB_WALLCLOCK_TIME=48:00:00  </command>
  ---------------------------------------------------
-2025-10-29 10:28:36: xmlchange success <command> ./xmlchange --subgroup case.st_archive JOB_WALLCLOCK_TIME=2:00:00  </command>
+2025-10-10 15:48:52: xmlchange success <command> ./xmlchange --subgroup case.st_archive JOB_WALLCLOCK_TIME=2:00:00  </command>
  ---------------------------------------------------
-2025-10-29 10:28:36: xmlchange success <command> ./xmlchange --subgroup case.compress JOB_WALLCLOCK_TIME=12:00:00  </command>
+2025-10-10 15:48:52: xmlchange success <command> ./xmlchange --subgroup case.compress JOB_WALLCLOCK_TIME=12:00:00  </command>
  ---------------------------------------------------
-2025-10-29 10:28:36: case.setup starting 
+2025-10-10 15:48:52: case.setup starting 
  ---------------------------------------------------
-2025-10-29 10:28:46: case.setup success 
+2025-10-10 15:49:15: case.setup success 
  ---------------------------------------------------
-2025-10-29 10:28:47:   local git repository created
+2025-10-10 15:49:15:   local git repository created
  ---------------------------------------------------
-2025-10-29 10:28:50: case.build starting 
+2025-10-10 15:49:19: case.build starting 
  ---------------------------------------------------
-2025-10-29 10:46:32: case.build success 
+2025-10-10 16:04:27: case.build success 
  ---------------------------------------------------
-2025-10-29 10:47:59: case.submit starting 1354552
+2025-10-10 16:10:21: case.submit starting 
  ---------------------------------------------------
-2025-10-29 10:48:00: case.submit success 1354552
+2025-10-10 16:10:22: case.submit error 
+ERROR: Command: 'sbatch --time 2:00:00 --account nn9560k  --dependency=afterok:1343352 /cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10/case.st_archive --resubmit' failed with error 'sbatch: error: Memory specification only allowed for ood, preproc and accel jobs
+sbatch: error: Batch job submission failed: Memory required by task is not available' from dir '/cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10'
  ---------------------------------------------------
-2025-10-29 10:48:28: case.run starting 1354550
+2025-10-10 16:12:16: case.submit starting 1343358
  ---------------------------------------------------
-2025-10-29 10:48:45: model execution starting 1354550
+2025-10-10 16:12:17: case.submit success 1343358
  ---------------------------------------------------
-2025-10-29 10:55:39: xmlchange success <command> ./xmlchange RESUBMIT=2  </command>
+2025-10-11 21:02:43: case.run starting 1343356
  ---------------------------------------------------
-2025-10-29 18:53:35: model execution success 1354550
+2025-10-11 21:02:52: model execution starting 1343356
  ---------------------------------------------------
-2025-10-29 18:53:38: case.run success 1354550
+2025-10-12 04:48:27: model execution success 1343356
  ---------------------------------------------------
-2025-10-29 18:53:39:   Timing files created for run 1354550.251029-104828
+2025-10-12 04:48:29: case.run success 1343356
  ---------------------------------------------------
-2025-10-29 18:54:07: case.run starting 1354550
+2025-10-12 04:48:29:   Timing files created for run 1343356.251011-210243
  ---------------------------------------------------
-2025-10-29 18:54:09: model execution starting 1354550
+2025-10-12 04:48:49: case.run starting 1343356
  ---------------------------------------------------
-2025-10-30 02:38:38: model execution success 1354550
+2025-10-12 04:48:50: model execution starting 1343356
  ---------------------------------------------------
-2025-10-30 02:38:40: case.run success 1354550
+2025-10-12 12:23:21: model execution success 1343356
  ---------------------------------------------------
-2025-10-30 02:38:40:   Timing files created for run 1354550.251029-185407
+2025-10-12 12:23:22: case.run success 1343356
  ---------------------------------------------------
-2025-10-30 02:39:24: st_archive starting 1354551
+2025-10-12 12:23:22:   Timing files created for run 1343356.251012-044849
  ---------------------------------------------------
-2025-10-30 02:42:49: st_archive success 1354551
+2025-10-12 12:23:54: st_archive starting 1343357
  ---------------------------------------------------
-2025-10-30 02:42:50: case.submit starting 1355296
+2025-10-12 12:25:01: st_archive success 1343357
  ---------------------------------------------------
-2025-10-30 02:42:50: case.submit success 1355296
+2025-10-12 12:25:02: case.submit starting 1344144
  ---------------------------------------------------
-2025-10-30 02:58:18: case.run starting 1355294
+2025-10-12 12:25:02: case.submit success 1344144
  ---------------------------------------------------
-2025-10-30 02:58:32: model execution starting 1355294
+2025-10-12 12:25:11: case.run starting 1344142
  ---------------------------------------------------
-2025-10-30 09:34:58: model execution success 1355294
+2025-10-12 12:25:22: model execution starting 1344142
  ---------------------------------------------------
-2025-10-30 09:34:59: case.run success 1355294
+2025-10-12 18:50:05: model execution success 1344142
  ---------------------------------------------------
-2025-10-30 09:34:59:   Timing files created for run 1355294.251030-025818
+2025-10-12 18:50:06: case.run success 1344142
  ---------------------------------------------------
-2025-10-30 09:35:22: case.run starting 1355294
+2025-10-12 18:50:07:   Timing files created for run 1344142.251012-122511
  ---------------------------------------------------
-2025-10-30 09:35:24: model execution starting 1355294
+2025-10-12 18:50:25: case.run starting 1344142
  ---------------------------------------------------
-2025-10-30 10:36:45: xmlchange success <command> ./xmlchange RESUBMIT=8  </command>
+2025-10-12 18:50:26: model execution starting 1344142
  ---------------------------------------------------
-2025-10-30 16:15:01: model execution success 1355294
+2025-10-13 01:14:49: model execution success 1344142
  ---------------------------------------------------
-2025-10-30 16:15:03: case.run success 1355294
+2025-10-13 01:14:50: case.run success 1344142
  ---------------------------------------------------
-2025-10-30 16:15:03:   Timing files created for run 1355294.251030-093522
+2025-10-13 01:14:51:   Timing files created for run 1344142.251012-185025
  ---------------------------------------------------
-2025-10-30 16:15:41: st_archive starting 1355295
+2025-10-13 01:15:21: st_archive starting 1344143
  ---------------------------------------------------
-2025-10-30 16:18:05: st_archive success 1355295
+2025-10-13 01:16:30: st_archive success 1344143
  ---------------------------------------------------
-2025-10-30 16:18:07: case.submit starting 1355766
+2025-10-13 01:16:31: case.submit starting 1344294
  ---------------------------------------------------
-2025-10-30 16:18:07: case.submit success 1355766
+2025-10-13 01:16:32: case.submit success 1344294
  ---------------------------------------------------
-2025-10-31 03:52:42: case.run starting 1355764
+2025-10-13 01:16:40: case.run starting 1344292
  ---------------------------------------------------
-2025-10-31 03:52:52: model execution starting 1355764
+2025-10-13 01:16:49: model execution starting 1344292
  ---------------------------------------------------
-2025-10-31 10:31:30: model execution success 1355764
+2025-10-13 07:41:56: model execution success 1344292
  ---------------------------------------------------
-2025-10-31 10:31:31: case.run success 1355764
+2025-10-13 07:41:57: case.run success 1344292
  ---------------------------------------------------
-2025-10-31 10:31:32:   Timing files created for run 1355764.251031-035242
+2025-10-13 07:41:58:   Timing files created for run 1344292.251013-011640
  ---------------------------------------------------
-2025-10-31 10:31:54: case.run starting 1355764
+2025-10-13 07:42:14: case.run starting 1344292
  ---------------------------------------------------
-2025-10-31 10:31:55: model execution starting 1355764
+2025-10-13 07:42:15: model execution starting 1344292
+ ---------------------------------------------------
+2025-10-13 14:11:59: model execution success 1344292
+ ---------------------------------------------------
+2025-10-13 14:12:00: case.run success 1344292
+ ---------------------------------------------------
+2025-10-13 14:12:00:   Timing files created for run 1344292.251013-074214
+ ---------------------------------------------------
+2025-10-13 14:12:33: st_archive starting 1344293
+ ---------------------------------------------------
+2025-10-13 14:13:46: st_archive success 1344293
+ ---------------------------------------------------
+2025-10-13 14:13:47: case.submit starting 1344580
+ ---------------------------------------------------
+2025-10-13 14:13:47: case.submit success 1344580
+ ---------------------------------------------------
+2025-10-13 14:13:56: case.run starting 1344578
+ ---------------------------------------------------
+2025-10-13 14:14:13: model execution starting 1344578
+ ---------------------------------------------------
+2025-10-13 15:28:33: xmlchange success <command> ./xmlchange RESUBMIT=10  </command>
+ ---------------------------------------------------
+2025-10-13 20:46:39: model execution success 1344578
+ ---------------------------------------------------
+2025-10-13 20:46:40: case.run success 1344578
+ ---------------------------------------------------
+2025-10-13 20:46:40:   Timing files created for run 1344578.251013-141356
+ ---------------------------------------------------
+2025-10-13 20:47:00: case.run starting 1344578
+ ---------------------------------------------------
+2025-10-13 20:47:01: model execution starting 1344578
+ ---------------------------------------------------
+2025-10-14 03:14:44: model execution success 1344578
+ ---------------------------------------------------
+2025-10-14 03:14:44: case.run success 1344578
+ ---------------------------------------------------
+2025-10-14 03:14:45:   Timing files created for run 1344578.251013-204700
+ ---------------------------------------------------
+2025-10-14 03:15:18: st_archive starting 1344579
+ ---------------------------------------------------
+2025-10-14 03:16:29: st_archive success 1344579
+ ---------------------------------------------------
+2025-10-14 03:16:30: case.submit starting 1344874
+ ---------------------------------------------------
+2025-10-14 03:16:31: case.submit success 1344874
+ ---------------------------------------------------
+2025-10-14 03:16:39: case.run starting 1344872
+ ---------------------------------------------------
+2025-10-14 03:16:49: model execution starting 1344872
+ ---------------------------------------------------
+2025-10-14 09:45:11: model execution success 1344872
+ ---------------------------------------------------
+2025-10-14 09:45:12: case.run success 1344872
+ ---------------------------------------------------
+2025-10-14 09:45:12:   Timing files created for run 1344872.251014-031639
+ ---------------------------------------------------
+2025-10-14 09:45:28: case.run starting 1344872
+ ---------------------------------------------------
+2025-10-14 09:45:29: model execution starting 1344872
+ ---------------------------------------------------
+2025-10-14 16:17:34: model execution success 1344872
+ ---------------------------------------------------
+2025-10-14 16:17:37: case.run success 1344872
+ ---------------------------------------------------
+2025-10-14 16:17:37:   Timing files created for run 1344872.251014-094528
+ ---------------------------------------------------
+2025-10-14 16:18:30: st_archive starting 1344873
+ ---------------------------------------------------
+2025-10-14 16:19:50: st_archive success 1344873
+ ---------------------------------------------------
+2025-10-14 16:19:51: case.submit starting 
+ ---------------------------------------------------
+2025-10-14 16:19:51: case.submit error 
+ERROR: Command: 'sbatch --time 48:00:00 --account nn9560k /cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10/.case.run --resubmit' failed with error 'sbatch: error: Batch job submission failed: Requested node configuration is not available' from dir '/cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10'
+ ---------------------------------------------------
+2025-10-14 16:49:59: case.submit starting 
+ ---------------------------------------------------
+2025-10-14 16:50:00: case.submit error 
+ERROR: Command: 'sbatch --time 48:00:00 --account nn9560k /cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10/.case.run --resubmit' failed with error 'sbatch: error: Batch job submission failed: Requested node configuration is not available' from dir '/cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10'
+ ---------------------------------------------------
+2025-10-14 16:52:41: xmlchange success <command> ./xmlchange --subgroup case.run JOB_WALLCLOCK_TIME=24:00:00  </command>
+ ---------------------------------------------------
+2025-10-14 16:53:02: case.submit starting 1345317
+ ---------------------------------------------------
+2025-10-14 16:53:02: case.submit success 1345317
+ ---------------------------------------------------
+2025-10-14 16:53:14: case.run starting 1345315
+ ---------------------------------------------------
+2025-10-14 16:53:36: model execution starting 1345315
+ ---------------------------------------------------
+2025-10-15 00:28:27: model execution success 1345315
+ ---------------------------------------------------
+2025-10-15 00:28:28: case.run success 1345315
+ ---------------------------------------------------
+2025-10-15 00:28:28:   Timing files created for run 1345315.251014-165314
+ ---------------------------------------------------
+2025-10-15 00:29:14: case.run starting 1345315
+ ---------------------------------------------------
+2025-10-15 00:29:16: model execution starting 1345315
+ ---------------------------------------------------
+2025-10-15 08:10:49: model execution success 1345315
+ ---------------------------------------------------
+2025-10-15 08:10:51: case.run success 1345315
+ ---------------------------------------------------
+2025-10-15 08:10:51:   Timing files created for run 1345315.251015-002914
+ ---------------------------------------------------
+2025-10-15 08:11:24: st_archive starting 1345316
+ ---------------------------------------------------
+2025-10-15 08:12:37: st_archive success 1345316
+ ---------------------------------------------------
+2025-10-15 08:12:38: case.submit starting 
+ ---------------------------------------------------
+2025-10-15 08:12:38: case.submit error 
+ERROR: Command: 'sbatch --time 24:00:00 --account nn9560k /cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10/.case.run --resubmit' failed with error 'sbatch: error: Batch job submission failed: Requested node configuration is not available' from dir '/cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10'
+ ---------------------------------------------------
+2025-10-15 16:15:05: case.submit starting 
+ ---------------------------------------------------
+2025-10-15 16:15:06: case.submit error 
+ERROR: Command: 'sbatch --time 24:00:00 --account nn9560k /cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10/.case.run --resubmit' failed with error 'sbatch: error: Batch job submission failed: Requested node configuration is not available' from dir '/cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10'
+ ---------------------------------------------------
+2025-10-16 08:50:24: case.submit starting 1345919
+ ---------------------------------------------------
+2025-10-16 08:50:25: case.submit success 1345919
+ ---------------------------------------------------
+2025-10-16 08:50:31: case.run starting 1345917
+ ---------------------------------------------------
+2025-10-16 08:50:40: model execution starting 1345917
  ---------------------------------------------------

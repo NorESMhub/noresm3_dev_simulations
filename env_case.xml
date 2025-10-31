@@ -30,7 +30,7 @@
       <type>char</type>
       <desc>Scripts root utils directory location (setup automatically to $CIMEROOT/scripts/Tools - DO NOT EDIT)</desc>
     </entry>
-    <entry id="MODEL_VERSION" value="noresm3_0_beta03b">
+    <entry id="MODEL_VERSION" value="noresm3_0_beta03a">
       <type>char</type>
       <desc>Apparent version of the model used for this case</desc>
     </entry>
@@ -302,7 +302,7 @@
       <desc> main configuration file that specifies all relevant filenames
     and directories to configure a case</desc>
     </entry>
-    <entry id="CASEROOT" value="/cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.noresm3_0_beta03b.CPLHIST.2025-10-29">
+    <entry id="CASEROOT" value="/cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10">
       <type>char</type>
       <desc>full pathname of case</desc>
     </entry>
@@ -311,15 +311,15 @@
       <valid_values>TRUE,FALSE</valid_values>
       <desc>user is not on the requested machine</desc>
     </entry>
-    <entry id="CIMEROOT" value="/cluster/work/users/kjetisaa/NorESM_3_0_beta03b/cime">
+    <entry id="CIMEROOT" value="/cluster/work/users/kjetisaa/NorESM_3_0_beta03a/cime">
       <type>char</type>
       <desc>full pathname of CIME source root directory</desc>
     </entry>
-    <entry id="SRCROOT" value="/cluster/work/users/kjetisaa/NorESM_3_0_beta03b">
+    <entry id="SRCROOT" value="/cluster/work/users/kjetisaa/NorESM_3_0_beta03a">
       <type>char</type>
       <desc>full pathname of source root directory</desc>
     </entry>
-    <entry id="CASE" value="n1850.ne16pg3_tn14.noresm3_0_beta03b.CPLHIST.2025-10-29">
+    <entry id="CASE" value="n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10">
       <type>char</type>
       <desc>case name</desc>
     </entry>
@@ -331,7 +331,7 @@
       <type>char</type>
       <desc>Machine name</desc>
     </entry>
-    <entry id="MACHDIR" value="/cluster/work/users/kjetisaa/NorESM_3_0_beta03b/ccs_config/machines">
+    <entry id="MACHDIR" value="/cluster/work/users/kjetisaa/NorESM_3_0_beta03a/ccs_config/machines">
       <type>char</type>
       <desc>Machines directory location</desc>
     </entry>
@@ -349,7 +349,7 @@
       <type>char</type>
       <desc>username of user who created case</desc>
     </entry>
-    <entry id="CASE_HASH" value="322e5d492dd5e38cfb84cf29ba89a51983f1df262e886a51b2a6ef3390255370">
+    <entry id="CASE_HASH" value="8cf3d50b67ff10e91c90ee2b04ec6bc6321120cb7354fd549642a1a1ea97c727">
       <type>char</type>
       <desc>Unique identifier for case</desc>
     </entry>

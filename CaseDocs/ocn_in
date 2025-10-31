@@ -648,8 +648,6 @@
   EGMNDF = 50.
   EGMXDF = 2500.
   EITMTH = 'gm'
-  IWDFAC = 0.35
-  IWDFLG = 1
   LNGMTP = 'vr12-ma'
   LTEDTP = 'neutral'
   NUBMIN = 2.e-6
@@ -670,7 +668,6 @@
   BACLIN = 3600.
   BATROP = 60.
   BMCMTH = 'dluc'
-  BRINE_MLBASE_FRAC = 0.5
   CB = .002
   CBAR = .05
   CCFILE = '/cluster/shared/noresm/inputdata/ocn/blom/bndcon/chlorophyll_concentration_tnx1v4_20170608.nc'
@@ -687,9 +684,9 @@
   DITFLX = .false.
   EXPCNF = 'cesm'
   GRFILE = '/cluster/shared/noresm/inputdata/ocn/blom/grid/grid_tnx1v4_20170622.nc'
-  ICFILE = '/cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.noresm3_0_beta03b.CPLHIST.2025-10-29/run/n1850.ne16pg3_tn14.noresm3_0_beta03b.BLOMalbAndBrine.2025-10-24.blom.r.0291-01-01-00000.nc'
-  IDATE = 02910101
-  IDATE0 = 02910101
+  ICFILE = '/cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10/run/n1850.ne16_tn14.noresm3_0_beta03_rafsipmasstonum.20250930.blom.r.0061-01-01-00000.nc'
+  IDATE = 00610101
+  IDATE0 = 00610101
   IOTYPE = 1
   ITEST = 60
   JTEST = 60
@@ -716,7 +713,7 @@
   PREF = 2000.e4
   RM0 = 1.2
   RM5 = 0.
-  RPOINT = 'rpointer.ocn.0316-01-01-00000'
+  RPOINT = 'rpointer.ocn.0121-01-01-00000'
   RSTCMP = 0
   RSTFMT = 1
   RSTFRQ = 1

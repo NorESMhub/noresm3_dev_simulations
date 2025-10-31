@@ -32,5 +32,3 @@
 ! To see a full documentation of the namelist variables - see $RUNDIR/ocn_in.readme
 !----------------------------------------------------------------------------------
  
-BRINE_MLBASE_FRAC = 0.5
-IWDFAC = 0.35

@@ -1,6 +1,6 @@
 &comp_inparm 
 
- cam_branch_file = 'n1850.ne16pg3_tn14.noresm3_0_beta03b.BLOMalbAndBrine.2025-10-24.cam.r.0291-01-01-00000.nc'
+ cam_branch_file = 'n1850.ne16_tn14.noresm3_0_beta03_rafsipmasstonum.20250930.cam.r.0061-01-01-00000.nc'
  dtime = 1800
  
 
@@ -16,7 +16,7 @@ history_aerosol            = .false.
 
 zmconv_c0_lnd              =  0.0075D0
 
-zmconv_c0_ocn              =  0.0075D0
+zmconv_c0_ocn              =  0.0300D0
 
 zmconv_ke                  =  5.0E-6
 
@@ -34,7 +34,7 @@ rafsip_on                  = .true.
 
 micro_mg_dcs               = 700.D-6
 
-clubb_c8                   =  5.0
+clubb_c8                   =  5.3
 
 nhtfrq = 0, -24
 

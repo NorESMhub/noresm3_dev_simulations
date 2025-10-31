@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 # Batch system directives
-#SBATCH  --job-name=run.n1850.ne16pg3_tn14.noresm3_0_beta03b.CPLHIST.2025-10-29
+#SBATCH  --job-name=run.n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10
 #SBATCH  --nodes=16
 #SBATCH  --ntasks-per-node=128
-#SBATCH  --output=run.n1850.ne16pg3_tn14.noresm3_0_beta03b.CPLHIST.2025-10-29   
+#SBATCH  --output=run.n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10   
 #SBATCH  --ntasks=2036
+#SBATCH  --reservation=nn9560k
 #SBATCH  --export=ALL
 #SBATCH  --partition=normal
 
@@ -17,9 +18,9 @@ DO NOT RUN THIS SCRIPT MANUALLY
 """
 
 import os, sys
-os.chdir( '/cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.noresm3_0_beta03b.CPLHIST.2025-10-29')
+os.chdir( '/cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10')
 
-_LIBDIR = os.path.join("/cluster/work/users/kjetisaa/NorESM_3_0_beta03b/cime", "CIME", "Tools")
+_LIBDIR = os.path.join("/cluster/work/users/kjetisaa/NorESM_3_0_beta03a/cime", "CIME", "Tools")
 sys.path.append(_LIBDIR)
 
 from standard_script_setup          import *

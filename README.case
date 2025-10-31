@@ -1,40 +1,40 @@
-2025-10-29 10:28:28: ./create_newcase --case /cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.noresm3_0_beta03b.CPLHIST.2025-10-29 --compset 1850_CAM70%LT%NORESM%CAMoslo_CLM60%FATES-NOCOMP_CICE_BLOM%HYB%ECO_MOSART_DGLC%NOEVOLVE_SWAV_SESP --res ne16pg3_tn14 --project nn9560k --machine betzy --compiler intel --run-unsupported --user-mods-dir /cluster/work/users/kjetisaa/NorESM_3_0_beta03b/cime_config/usermods_dirs/reduced_out_devsim/
+2025-10-10 15:48:45: ./create_newcase --case /cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10 --compset 1850_CAM70%LT%NORESM%CAMoslo_CLM60%FATES-NOCOMP_CICE_BLOM%HYB%ECO_MOSART_DGLC%NOEVOLVE_SWAV_SESP --res ne16pg3_tn14 --project nn9560k --machine betzy --compiler intel --run-unsupported --user-mods-dir /cluster/work/users/kjetisaa/NorESM_3_0_beta03a/cime_config/usermods_dirs/reduced_out_devsim/
  ---------------------------------------------------
-2025-10-29 10:28:28: Compset longname is 1850_CAM70%LT%NORESM%CAMoslo_CLM60%FATES-NOCOMP_CICE_BLOM%HYB%ECO_MOSART_DGLC%NOEVOLVE_SWAV_SESP
+2025-10-10 15:48:45: Compset longname is 1850_CAM70%LT%NORESM%CAMoslo_CLM60%FATES-NOCOMP_CICE_BLOM%HYB%ECO_MOSART_DGLC%NOEVOLVE_SWAV_SESP
  ---------------------------------------------------
-2025-10-29 10:28:28: Compset specification file is /cluster/work/users/kjetisaa/NorESM_3_0_beta03b/cime_config/config_compsets.xml
+2025-10-10 15:48:45: Compset specification file is /cluster/work/users/kjetisaa/NorESM_3_0_beta03a/cime_config/config_compsets.xml
  ---------------------------------------------------
-2025-10-29 10:28:28: Pes     specification file is /cluster/work/users/kjetisaa/NorESM_3_0_beta03b/cime_config/config_pes.xml
+2025-10-10 15:48:45: Pes     specification file is /cluster/work/users/kjetisaa/NorESM_3_0_beta03a/cime_config/config_pes.xml
  ---------------------------------------------------
-2025-10-29 10:28:28: Forcing is 1850
+2025-10-10 15:48:45: Forcing is 1850
  ---------------------------------------------------
-2025-10-29 10:28:28: Using 1 coupler instances
+2025-10-10 15:48:45: Using 1 coupler instances
  ---------------------------------------------------
-2025-10-29 10:28:28: Component ATM is CAM cam7 physics:CAM low top model CAM-Nor physics and dynamics differences :Use the Oslo Aero aerosol model with trop_mam_oslo chemistry :
+2025-10-10 15:48:45: Component ATM is CAM cam7 physics:CAM low top model CAM-Nor physics and dynamics differences :Use the Oslo Aero aerosol model with trop_mam_oslo chemistry :
  ---------------------------------------------------
-2025-10-29 10:28:28: ATM_GRID is ne16np4.pg3
+2025-10-10 15:48:45: ATM_GRID is ne16np4.pg3
  ---------------------------------------------------
-2025-10-29 10:28:28: Component LND is clm6.0:No Competition mode with FATES (Functionally Assembled Terrestrial Ecosystem Simulator) Ecosystem Demography model: 
+2025-10-10 15:48:45: Component LND is clm6.0:No Competition mode with FATES (Functionally Assembled Terrestrial Ecosystem Simulator) Ecosystem Demography model: 
  ---------------------------------------------------
-2025-10-29 10:28:28: LND_GRID is ne16np4.pg3
+2025-10-10 15:48:45: LND_GRID is ne16np4.pg3
  ---------------------------------------------------
-2025-10-29 10:28:28: This component includes user_mods /cluster/work/users/kjetisaa/NorESM_3_0_beta03b/components/clm//cime_config/usermods_dirs/clm/fates_nocomp
+2025-10-10 15:48:45: This component includes user_mods /cluster/work/users/kjetisaa/NorESM_3_0_beta03a/components/clm//cime_config/usermods_dirs/clm/fates_nocomp
  ---------------------------------------------------
-2025-10-29 10:28:28: Component ICE is Sea ICE (cice) model version 6
+2025-10-10 15:48:45: Component ICE is Sea ICE (cice) model version 6
  ---------------------------------------------------
-2025-10-29 10:28:28: ICE_GRID is tnx1v4
+2025-10-10 15:48:45: ICE_GRID is tnx1v4
  ---------------------------------------------------
-2025-10-29 10:28:28: Component OCN is BLOM default:BLOM/Ecosystem:
+2025-10-10 15:48:45: Component OCN is BLOM default:BLOM/Ecosystem:
  ---------------------------------------------------
-2025-10-29 10:28:28: OCN_GRID is tnx1v4
+2025-10-10 15:48:45: OCN_GRID is tnx1v4
  ---------------------------------------------------
-2025-10-29 10:28:28: Component ROF is MOSART: MOdel for Scale Adaptive River Transport
+2025-10-10 15:48:45: Component ROF is MOSART: MOdel for Scale Adaptive River Transport
  ---------------------------------------------------
-2025-10-29 10:28:28: ROF_GRID is r05
+2025-10-10 15:48:45: ROF_GRID is r05
  ---------------------------------------------------
-2025-10-29 10:28:28: Component GLC is Data glc model (DGLC) no evolve mode 
+2025-10-10 15:48:45: Component GLC is Data glc model (DGLC) no evolve mode 
  ---------------------------------------------------
-2025-10-29 10:28:28: GLC_GRID is gris4d
+2025-10-10 15:48:45: GLC_GRID is gris4d
  ---------------------------------------------------
-2025-10-29 10:28:28: ESP_GRID is None
+2025-10-10 15:48:45: ESP_GRID is None
  ---------------------------------------------------
