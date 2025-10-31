@@ -13,13 +13,13 @@
   history_file = "unknown"
   history_format = "default"
   history_precision = 4
-  ice_ic = "n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10.cice.r.0121-01-01-00000.nc"
+  ice_ic = "n1850.ne16pg3_tn14.noresm3_0_beta03a.landAndCAMupdate.2025-10-16.cice.r.0231-01-01-00000.nc"
   latpnt = 90.0, -65.0
   lonpnt = 0.0, -45.0
   ndtd = 1
   numax = 99
   numin = 11
-  pointer_file = "rpointer.ice.0241-01-01-00000"
+  pointer_file = "rpointer.ice.0291-01-01-00000"
   print_global = .true.
   print_points = .false.
   restart_ext = .false.

@@ -1,3 +1,3 @@
 grid_file = /cluster/shared/noresm/inputdata/ocn/blom/grid/horiz_grid_tnx1v4_20170622.ieeer8
 kmt_file = /cluster/shared/noresm/inputdata/ocn/blom/grid/topography_tnx1v4_20170622.ieeei4
-ice_ic = n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10.cice.r.0121-01-01-00000.nc
+ice_ic = n1850.ne16pg3_tn14.noresm3_0_beta03a.landAndCAMupdate.2025-10-16.cice.r.0231-01-01-00000.nc

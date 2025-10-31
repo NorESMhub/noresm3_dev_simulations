@@ -1,3 +1,5 @@
 &comp_inparm 
 
+ocean_albedo_scheme = 1
+
 / 

@@ -17,3 +17,4 @@
 ! For example, rather than set username to 'foo' in user_nl_cpl, call
 ! ./xmlchange USER=foo
 !------------------------------------------------------------------------
+ocean_albedo_scheme = 1
