@@ -1,6 +1,6 @@
 &comp_inparm 
 
-nrevsn = 'n1850.ne16_tn14.noresm3_0_beta03_rafsipmasstonum.20250930.clm2.r.0061-01-01-00000.nc'
+nrevsn = 'n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10.clm2.r.0121-01-01-00000.nc'
 use_fates_nocomp = .true.
 
 fates_history_dimlevel = 1,2

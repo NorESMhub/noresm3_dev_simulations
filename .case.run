@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 # Batch system directives
-#SBATCH  --job-name=run.n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10
+#SBATCH  --job-name=run.n1850.ne16pg3_tn14.noresm3_0_beta03a.landAndCAMupdate.2025-10-16
 #SBATCH  --nodes=16
 #SBATCH  --ntasks-per-node=128
-#SBATCH  --output=run.n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10   
+#SBATCH  --output=run.n1850.ne16pg3_tn14.noresm3_0_beta03a.landAndCAMupdate.2025-10-16   
 #SBATCH  --ntasks=2036
-#SBATCH  --reservation=nn9560k
 #SBATCH  --export=ALL
 #SBATCH  --partition=normal
+
 
 """
 template to create a case run script. This should only ever be called
@@ -18,7 +18,7 @@ DO NOT RUN THIS SCRIPT MANUALLY
 """
 
 import os, sys
-os.chdir( '/cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10')
+os.chdir( '/cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.noresm3_0_beta03a.landAndCAMupdate.2025-10-16')
 
 _LIBDIR = os.path.join("/cluster/work/users/kjetisaa/NorESM_3_0_beta03a/cime", "CIME", "Tools")
 sys.path.append(_LIBDIR)

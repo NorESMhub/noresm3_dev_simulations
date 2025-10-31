@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 # Batch system directives
-#SBATCH  --job-name=st_archive.n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10
-#SBATCH  --nodes=4
+#SBATCH  --job-name=st_archive.n1850.ne16pg3_tn14.noresm3_0_beta03a.landAndCAMupdate.2025-10-16
+#SBATCH  --nodes=1
 #SBATCH  --ntasks-per-node=1
-#SBATCH  --output=st_archive.n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10   
-#SBATCH  --ntasks=4
+#SBATCH  --output=st_archive.n1850.ne16pg3_tn14.noresm3_0_beta03a.landAndCAMupdate.2025-10-16   
+#SBATCH  --ntasks=1
 #SBATCH  --export=ALL
-#SBATCH  --partition=normal
+#SBATCH  --partition=preproc
+#SBATCH  --mem-per-cpu=1900M
 #SBATCH  --cpus-per-task=1
-#SBATCH  --reservation=nn9560k
 
 """
 Performs short term archiving for restart files, history and rpointer
@@ -18,7 +18,7 @@ is called by case.submit on batch systems.
 """
 
 import sys, os, time
-os.chdir( '/cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10')
+os.chdir( '/cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.noresm3_0_beta03a.landAndCAMupdate.2025-10-16')
 
 _LIBDIR = os.path.join("/cluster/work/users/kjetisaa/NorESM_3_0_beta03a/cime", "CIME", "Tools")
 sys.path.append(_LIBDIR)

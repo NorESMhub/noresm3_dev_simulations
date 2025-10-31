@@ -27,7 +27,7 @@
 /
 &cam_initfiles_nl
  bnd_topo		= '/cluster/shared/noresm/inputdata/atm/cam/topo/se/ne16pg3_gmted2010_modis_bedmachine_nc3000_Laplace0200_20230202.nc'
- cam_branch_file		= 'n1850.ne16_tn14.noresm3_0_beta03_rafsipmasstonum.20250930.cam.r.0061-01-01-00000.nc'
+ cam_branch_file		= 'n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10.cam.r.0121-01-01-00000.nc'
  ncdata		= '/cluster/shared/noresm/inputdata/atm/cam/inic/se/FLT_L58_ne16pg3_IC_NF1850_c250411.nc'
  scale_dry_air_mass		=   98288.0D0 
  use_topo_file		=  .true.  
@@ -144,7 +144,7 @@
  clubb_c6thlc		=  1.0     
  clubb_c7		=  0.1     
  clubb_c7b		=  0.5     
- clubb_c8		= 5.3
+ clubb_c8		= 5.0
  clubb_c8b		=  0.0     
  clubb_c_invrs_tau_bkgnd		=  1.0     
  clubb_c_invrs_tau_n2		=  0.1     
@@ -518,7 +518,7 @@
 &zmconv_nl
  zmconv_alfadet		=  0.1     
  zmconv_c0_lnd		= 0.0075D0
- zmconv_c0_ocn		= 0.0300D0
+ zmconv_c0_ocn		= 0.0075D0
  zmconv_capelmt		=  70.0    
  zmconv_dmpdz		=  -1.0E-3 
  zmconv_entrmn		=  2.e-4   

@@ -6,9 +6,9 @@
 
 set -e
 
-# Created 2025-10-10 15:48:47
+# Created 2025-10-16 11:03:45
 
-CASEDIR="/cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10"
+CASEDIR="/cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.noresm3_0_beta03a.landAndCAMupdate.2025-10-16"
 
 /cluster/work/users/kjetisaa/NorESM_3_0_beta03a/cime/scripts/create_newcase --case "${CASEDIR}" --compset 1850_CAM70%LT%NORESM%CAMoslo_CLM60%FATES-NOCOMP_CICE_BLOM%HYB%ECO_MOSART_DGLC%NOEVOLVE_SWAV_SESP --res ne16pg3_tn14 --project nn9560k --machine betzy --compiler intel --run-unsupported --user-mods-dir /cluster/work/users/kjetisaa/NorESM_3_0_beta03a/cime_config/usermods_dirs/reduced_out_devsim/
 
@@ -52,6 +52,22 @@ cd "${CASEDIR}"
 
 ./case.build
 
+./xmlchange RESUBMIT=9
+
+./case.submit
+
+./xmlchange RUN_TYPE=branch
+
+./xmlchange RUN_STARTDATE=0121-01-01,START_TOD=00000
+
+./xmlchange RUN_REFCASE=n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10
+
+./xmlchange RUN_REFDATE=0121-01-01,RUN_REFTOD=00000
+
+./xmlchange GET_REFCASE=FALSE
+
+./xmlchange DRV_RESTART_POINTER=rpointer.cpl.0121-01-01-00000
+
 ./case.submit
 
 ./case.submit
@@ -60,11 +76,7 @@ cd "${CASEDIR}"
 
 ./case.submit
 
-./xmlchange --subgroup case.run JOB_WALLCLOCK_TIME=24:00:00
-
 ./case.submit
 
-./case.submit
-
-./case.submit
+./xmlchange RESUBMIT=0
 

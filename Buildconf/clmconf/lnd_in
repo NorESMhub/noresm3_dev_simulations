@@ -59,7 +59,7 @@
  n_dom_landunits = 0
  n_dom_pfts = 0
  nlevsno = 12
- nrevsn = 'n1850.ne16_tn14.noresm3_0_beta03_rafsipmasstonum.20250930.clm2.r.0061-01-01-00000.nc'
+ nrevsn = 'n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10.clm2.r.0121-01-01-00000.nc'
  nsegspc = 35
  o3_veg_stress_method = 'unset'
  paramfile = '/cluster/shared/noresm/inputdata/lnd/clm2/paramdata/ctsm60_params.250923_v26j.nc'
@@ -358,7 +358,7 @@
 !#--------------------------------------------------------------------------------------------------------------------------
 !# lnd_in:: Comment:
 !# This namelist was created using the following command-line:
-!#     /cluster/work/users/kjetisaa/NorESM_3_0_beta03a/components/clm/bld/CLM build-namelist -cimeroot /cluster/work/users/kjetisaa/NorESM_3_0_beta03a/cime -infile /cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10/Buildconf/clmconf/namelist -csmdata /cluster/shared/noresm/inputdata -inputdata /cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10/Buildconf/ctsm.input_data_list -ignore_ic_year -namelist &clm_inparm  start_ymd=00610101 /  -no-megan -use_case 1850_control -res ne16np4.pg3 -clm_start_type branch -envxml_dir /cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10 -configuration clm -structure standard -glc_nec 10 -co2_ppmv 284.7 -co2_type diagnostic -config /cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10/Buildconf/clmconf/config_cache.xml -driver nuopc -bgc fates -clm_accelerated_spinup off -lnd_tuning_mode clm6_0_cam7.0 -mask tnx1v4
+!#     /cluster/work/users/kjetisaa/NorESM_3_0_beta03a/components/clm/bld/CLM build-namelist -cimeroot /cluster/work/users/kjetisaa/NorESM_3_0_beta03a/cime -infile /cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.noresm3_0_beta03a.landAndCAMupdate.2025-10-16/Buildconf/clmconf/namelist -csmdata /cluster/shared/noresm/inputdata -inputdata /cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.noresm3_0_beta03a.landAndCAMupdate.2025-10-16/Buildconf/ctsm.input_data_list -ignore_ic_year -namelist &clm_inparm  start_ymd=01210101 /  -no-megan -use_case 1850_control -res ne16np4.pg3 -clm_start_type branch -envxml_dir /cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.noresm3_0_beta03a.landAndCAMupdate.2025-10-16 -configuration clm -structure standard -glc_nec 10 -co2_ppmv 284.7 -co2_type diagnostic -config /cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.noresm3_0_beta03a.landAndCAMupdate.2025-10-16/Buildconf/clmconf/config_cache.xml -driver nuopc -bgc fates -clm_accelerated_spinup off -lnd_tuning_mode clm6_0_cam7.0 -mask tnx1v4
 !# 
 !# For help on options use: /cluster/work/users/kjetisaa/NorESM_3_0_beta03a/components/clm/bld/CLM build-namelist -help
 !#--------------------------------------------------------------------------------------------------------------------------

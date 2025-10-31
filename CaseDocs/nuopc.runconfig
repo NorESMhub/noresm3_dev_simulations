@@ -1,7 +1,7 @@
 DRIVER_attributes::
      Verbosity = off
      cime_model = cesm
-     drv_restart_pointer = rpointer.cpl.0121-01-01-00000
+     drv_restart_pointer = rpointer.cpl.0241-01-01-00000
      logFilePostFix = .log
      outPathRoot = ./
      pio_blocksize = -1
@@ -88,7 +88,7 @@ ALLCOMP_attributes::
      WAV_model = swav
      brnch_retain_casename = .false.
      case_desc = UNSET
-     case_name = n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10
+     case_name = n1850.ne16pg3_tn14.noresm3_0_beta03a.landAndCAMupdate.2025-10-16
      cism_evolve = .false.
      coldair_outbreak_mod = .true.
      data_assimilation_atm = .false.
@@ -305,7 +305,7 @@ CLOCK_attributes::
      restart_ymd = -999
      rof_cpl_dt = 10800
      start_tod = 0
-     start_ymd = 00610101
+     start_ymd = 01210101
      stop_n = 5
      stop_option = nyears
      stop_tod = 0
@@ -352,8 +352,8 @@ WAV_attributes::
 ::
 
 MED_modelio::
-     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10/run
-     logfile = med.log.1345917.251016-085031
+     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.noresm3_0_beta03a.landAndCAMupdate.2025-10-16/run
+     logfile = med.log.1351408.251024-142347
      pio_async_interface = .false.
      pio_netcdf_format = 64bit_data
      pio_numiotasks = -99
@@ -364,8 +364,8 @@ MED_modelio::
 ::
 
 ATM_modelio::
-     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10/run
-     logfile = atm.log.1345917.251016-085031
+     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.noresm3_0_beta03a.landAndCAMupdate.2025-10-16/run
+     logfile = atm.log.1351408.251024-142347
      pio_async_interface = .false.
      pio_netcdf_format = 64bit_data
      pio_numiotasks = -99
@@ -376,8 +376,8 @@ ATM_modelio::
 ::
 
 LND_modelio::
-     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10/run
-     logfile = lnd.log.1345917.251016-085031
+     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.noresm3_0_beta03a.landAndCAMupdate.2025-10-16/run
+     logfile = lnd.log.1351408.251024-142347
      pio_async_interface = .false.
      pio_netcdf_format = 64bit_data
      pio_numiotasks = -99
@@ -388,8 +388,8 @@ LND_modelio::
 ::
 
 ICE_modelio::
-     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10/run
-     logfile = ice.log.1345917.251016-085031
+     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.noresm3_0_beta03a.landAndCAMupdate.2025-10-16/run
+     logfile = ice.log.1351408.251024-142347
      pio_async_interface = .false.
      pio_netcdf_format = 64bit_data
      pio_numiotasks = -99
@@ -400,8 +400,8 @@ ICE_modelio::
 ::
 
 OCN_modelio::
-     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10/run
-     logfile = ocn.log.1345917.251016-085031
+     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.noresm3_0_beta03a.landAndCAMupdate.2025-10-16/run
+     logfile = ocn.log.1351408.251024-142347
      pio_async_interface = .false.
      pio_netcdf_format = 64bit_data
      pio_numiotasks = -99
@@ -412,8 +412,8 @@ OCN_modelio::
 ::
 
 ROF_modelio::
-     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10/run
-     logfile = rof.log.1345917.251016-085031
+     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.noresm3_0_beta03a.landAndCAMupdate.2025-10-16/run
+     logfile = rof.log.1351408.251024-142347
      pio_async_interface = .false.
      pio_netcdf_format = 64bit_data
      pio_numiotasks = -99
@@ -424,8 +424,8 @@ ROF_modelio::
 ::
 
 GLC_modelio::
-     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10/run
-     logfile = glc.log.1345917.251016-085031
+     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.noresm3_0_beta03a.landAndCAMupdate.2025-10-16/run
+     logfile = glc.log.1351408.251024-142347
      pio_async_interface = .false.
      pio_netcdf_format = 64bit_data
      pio_numiotasks = -99
@@ -436,8 +436,8 @@ GLC_modelio::
 ::
 
 WAV_modelio::
-     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10/run
-     logfile = wav.log.1345917.251016-085031
+     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.noresm3_0_beta03a.landAndCAMupdate.2025-10-16/run
+     logfile = wav.log.1351408.251024-142347
      pio_async_interface = .false.
      pio_netcdf_format = 64bit_data
      pio_numiotasks = -99
@@ -448,8 +448,8 @@ WAV_modelio::
 ::
 
 ESP_modelio::
-     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10/run
-     logfile = esp.log.1345917.251016-085031
+     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.noresm3_0_beta03a.landAndCAMupdate.2025-10-16/run
+     logfile = esp.log.1351408.251024-142347
      pio_async_interface = .false.
      pio_netcdf_format = 64bit_data
      pio_numiotasks = -99
@@ -460,7 +460,7 @@ ESP_modelio::
 ::
 
 DRV_modelio::
-     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.hybrid_fates-nocomp.noresm3_0_beta03a.2025-10-10/run
-     logfile = drv.log.1345917.251016-085031
+     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.noresm3_0_beta03a.landAndCAMupdate.2025-10-16/run
+     logfile = drv.log.1351408.251024-142347
 ::
 
