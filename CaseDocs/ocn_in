@@ -687,9 +687,9 @@
   DITFLX = .false.
   EXPCNF = 'cesm'
   GRFILE = '/cluster/shared/noresm/inputdata/ocn/blom/grid/grid_tnx1v4_20170622.nc'
-  ICFILE = '/cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.noresm3_0_beta03b.BLOMalbAndBrine.2025-10-24/run/n1850.ne16pg3_tn14.noresm3_0_beta03a.landAndCAMupdate.2025-10-16.blom.r.0231-01-01-00000.nc'
-  IDATE = 02310101
-  IDATE0 = 02310101
+  ICFILE = '/cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.noresm3_0_beta03b.CPLHIST.2025-10-29/run/n1850.ne16pg3_tn14.noresm3_0_beta03b.BLOMalbAndBrine.2025-10-24.blom.r.0291-01-01-00000.nc'
+  IDATE = 02910101
+  IDATE0 = 02910101
   IOTYPE = 1
   ITEST = 60
   JTEST = 60
@@ -716,7 +716,7 @@
   PREF = 2000.e4
   RM0 = 1.2
   RM5 = 0.
-  RPOINT = 'rpointer.ocn.0291-01-01-00000'
+  RPOINT = 'rpointer.ocn.0316-01-01-00000'
   RSTCMP = 0
   RSTFMT = 1
   RSTFRQ = 1

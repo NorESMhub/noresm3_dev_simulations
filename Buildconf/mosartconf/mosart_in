@@ -16,7 +16,7 @@
   mfilt = 1
   ndens = 1
   nhtfrq = 0
-  nrevsn = "n1850.ne16pg3_tn14.noresm3_0_beta03a.landAndCAMupdate.2025-10-16.mosart.r.0231-01-01-00000.nc"
+  nrevsn = "n1850.ne16pg3_tn14.noresm3_0_beta03b.BLOMalbAndBrine.2025-10-24.mosart.r.0291-01-01-00000.nc"
   qgwl_runoff_option = "negative"
   use_halo_option = .false.
 /

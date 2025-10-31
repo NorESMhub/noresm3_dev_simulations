@@ -22,39 +22,39 @@ MED_attributes::
      glc_renormalize_smb = on
      histaux_atm2med_file1_auxname = atm.1h.inst
      histaux_atm2med_file1_doavg = .false.
-     histaux_atm2med_file1_enabled = .false.
+     histaux_atm2med_file1_enabled = .true.
      histaux_atm2med_file1_flds = Faxa_swndr:Faxa_swvdr:Faxa_swndf:Faxa_swvdf
      histaux_atm2med_file1_history_n = 1
      histaux_atm2med_file1_history_option = nhours
      histaux_atm2med_file1_ntperfile = 24
      histaux_atm2med_file2_auxname = atm.1h.avrg
      histaux_atm2med_file2_doavg = .true.
-     histaux_atm2med_file2_enabled = .false.
+     histaux_atm2med_file2_enabled = .true.
      histaux_atm2med_file2_flds = Sa_u:Sa_v
      histaux_atm2med_file2_history_n = 1
      histaux_atm2med_file2_history_option = nhours
      histaux_atm2med_file2_ntperfile = 24
      histaux_atm2med_file3_auxname = atm.3hprec.avrg
      histaux_atm2med_file3_doavg = .true.
-     histaux_atm2med_file3_enabled = .false.
+     histaux_atm2med_file3_enabled = .true.
      histaux_atm2med_file3_flds = Faxa_rainc:Faxa_rainl:Faxa_snowc:Faxa_snowl
      histaux_atm2med_file3_history_n = 3
      histaux_atm2med_file3_history_option = nhours
      histaux_atm2med_file3_ntperfile = 8
      histaux_atm2med_file4_auxname = atm.3h.avrg
      histaux_atm2med_file4_doavg = .true.
-     histaux_atm2med_file4_enabled = .false.
+     histaux_atm2med_file4_enabled = .true.
      histaux_atm2med_file4_flds = Sa_z:Sa_topo:Sa_u:Sa_v:Sa_tbot:Sa_ptem:Sa_shum:Sa_dens:Sa_pbot:Sa_pslv:Faxa_lwdn:Faxa_rainc:Faxa_rainl:Faxa_snowc:Faxa_snowl:Faxa_swndr:Faxa_swvdr:Faxa_swndf:Faxa_swvdf:Sa_co2diag:Sa_co2prog
      histaux_atm2med_file4_history_n = 3
      histaux_atm2med_file4_history_option = nhours
      histaux_atm2med_file4_ntperfile = 8
      histaux_atm2med_file5_auxname = atm.24h.avrg
      histaux_atm2med_file5_doavg = .true.
-     histaux_atm2med_file5_enabled = .false.
+     histaux_atm2med_file5_enabled = .true.
      histaux_atm2med_file5_flds = Faxa_bcph:Faxa_ocph:Faxa_dstwet:Faxa_dstdry:Sa_co2prog:Sa_co2diag
-     histaux_atm2med_file5_history_n = 3
-     histaux_atm2med_file5_history_option = nhours
-     histaux_atm2med_file5_ntperfile = 2
+     histaux_atm2med_file5_history_n = 1
+     histaux_atm2med_file5_history_option = 'ndays'
+     histaux_atm2med_file5_ntperfile = 1
      histaux_lnd2med_file1_auxname = lnd.ncpl.inst
      histaux_lnd2med_file1_doavg = .false.
      histaux_lnd2med_file1_enabled = .false.
@@ -78,11 +78,11 @@ MED_attributes::
      histaux_ocn2med_file1_ntperfile = 30
      histaux_rof2med_file1_auxname = rof.24h.avrg
      histaux_rof2med_file1_doavg = .true.
-     histaux_rof2med_file1_enabled = .false.
+     histaux_rof2med_file1_enabled = .true.
      histaux_rof2med_file1_flds = all
-     histaux_rof2med_file1_history_n = 3
-     histaux_rof2med_file1_history_option = nhours
-     histaux_rof2med_file1_ntperfile = 2
+     histaux_rof2med_file1_history_n = 1
+     histaux_rof2med_file1_history_option = 'ndays'
+     histaux_rof2med_file1_ntperfile = 1
      histaux_wav2med_file1_auxname = wav.24h.avg
      histaux_wav2med_file1_doavg = .false.
      histaux_wav2med_file1_flds = Sw_hs_avg:Sw_Tm1_avg:Sw_thm_avg:Sw_u_avg:Sw_v_avg:Sw_ustokes_avg:Sw_vstokes_avg:Sw_tusx_avg:Sw_tusy_avg:Sw_thp0_avg:Sw_fp0_avg:Sw_phs0_avg:Sw_phs1_avg:Sw_pdir0_avg:Sw_pdir1_avg:Sw_pTm10_avg:Sw_pTm11_avg
@@ -146,10 +146,83 @@ MED_attributes::
      wav_ny = 0
 ::
 
+ALLCOMP_attributes::
+     ATM_model = cam
+     GLC_model = dglc
+     ICE_model = cice
+     LND_model = clm
+     MED_model = cesm
+     OCN_model = blom
+     Profiling = 0
+     ROF_model = mosart
+     ScalarFieldCount = 4
+     ScalarFieldIdxGridNX = 1
+     ScalarFieldIdxGridNY = 2
+     ScalarFieldIdxNextSwCday = 3
+     ScalarFieldIdxPrecipFactor = 4
+     ScalarFieldName = cpl_scalars
+     WAV_model = swav
+     brnch_retain_casename = .false.
+     case_desc = UNSET
+     case_name = n1850.ne16pg3_tn14.noresm3_0_beta03b.CPLHIST.2025-10-29
+     cism_evolve = .false.
+     coldair_outbreak_mod = .true.
+     data_assimilation_atm = .false.
+     data_assimilation_cpl = .false.
+     data_assimilation_glc = .false.
+     data_assimilation_ice = .false.
+     data_assimilation_lnd = .false.
+     data_assimilation_ocn = .false.
+     data_assimilation_rof = .false.
+     data_assimilation_wav = .false.
+     flds_bgc_oi = .false.
+     flds_brf = .false.
+     flds_co2a = .true.
+     flds_co2b = .false.
+     flds_co2c = .false.
+     flds_dms = .true.
+     flds_i2o_per_cat = .false.
+     flds_n2o = .false.
+     flds_nh3 = .false.
+     flds_r2l_stream_channel_depths = .false.
+     flds_wiso = .false.
+     flux_convergence = 0.01
+     flux_max_iteration = 5
+     glc_nec = 10
+     histaux_l2x1yrg = .true.
+     histaux_wav2med_file1_enabled = .false.
+     history_n = -999
+     history_option = never
+     hostname = betzy
+     ice_ncat = 5
+     mediator_present = true
+     mesh_atm = /cluster/shared/noresm/inputdata/share/meshes/ne16pg3_ESMFmesh_cdf5_c20211018.nc
+     mesh_glc = /cluster/shared/noresm/inputdata/share/meshes/greenland_4km_epsg3413_c170414_ESMFmesh_c20190729.nc
+     mesh_ice = /cluster/shared/noresm/inputdata/share/meshes/tnx1v4_20170601_cdf5_ESMFmesh.nc
+     mesh_lnd = /cluster/shared/noresm/inputdata/share/meshes/ne16pg3_ESMFmesh_cdf5_c20211018.nc
+     mesh_mask = /cluster/shared/noresm/inputdata/share/meshes/tnx1v4_20170601_cdf5_ESMFmesh.nc
+     mesh_ocn = /cluster/shared/noresm/inputdata/share/meshes/tnx1v4_20170601_cdf5_ESMFmesh.nc
+     model_version = unknown
+     ocn2glc_coupling = .true.
+     orb_eccen = 1.e36
+     orb_iyear = 1850
+     orb_iyear_align = 1850
+     orb_mode = fixed_year
+     orb_mvelp = 1.e36
+     orb_obliq = 1.e36
+     scol_lat = -999.99
+     scol_lon = -999.99
+     single_column_lnd_domainfile = UNSET
+     start_type = continue
+     tfreeze_option = mushy
+     username = kjetisaa
+     wav_coupling_to_cice = .false.
+::
+
 DRIVER_attributes::
      Verbosity = off
      cime_model = cesm
-     drv_restart_pointer = rpointer.cpl.0291-01-01-00000
+     drv_restart_pointer = rpointer.cpl.0316-01-01-00000
      logFilePostFix = .log
      outPathRoot = ./
      pio_blocksize = -1
@@ -218,79 +291,6 @@ PELAYOUT_attributes::
 ::
 
 component_list: MED ATM LND ICE OCN ROF GLC
-ALLCOMP_attributes::
-     ATM_model = cam
-     GLC_model = dglc
-     ICE_model = cice
-     LND_model = clm
-     MED_model = cesm
-     OCN_model = blom
-     Profiling = 0
-     ROF_model = mosart
-     ScalarFieldCount = 4
-     ScalarFieldIdxGridNX = 1
-     ScalarFieldIdxGridNY = 2
-     ScalarFieldIdxNextSwCday = 3
-     ScalarFieldIdxPrecipFactor = 4
-     ScalarFieldName = cpl_scalars
-     WAV_model = swav
-     brnch_retain_casename = .false.
-     case_desc = UNSET
-     case_name = n1850.ne16pg3_tn14.noresm3_0_beta03b.BLOMalbAndBrine.2025-10-24
-     cism_evolve = .false.
-     coldair_outbreak_mod = .true.
-     data_assimilation_atm = .false.
-     data_assimilation_cpl = .false.
-     data_assimilation_glc = .false.
-     data_assimilation_ice = .false.
-     data_assimilation_lnd = .false.
-     data_assimilation_ocn = .false.
-     data_assimilation_rof = .false.
-     data_assimilation_wav = .false.
-     flds_bgc_oi = .false.
-     flds_brf = .false.
-     flds_co2a = .true.
-     flds_co2b = .false.
-     flds_co2c = .false.
-     flds_dms = .true.
-     flds_i2o_per_cat = .false.
-     flds_n2o = .false.
-     flds_nh3 = .false.
-     flds_r2l_stream_channel_depths = .false.
-     flds_wiso = .false.
-     flux_convergence = 0.01
-     flux_max_iteration = 5
-     glc_nec = 10
-     histaux_l2x1yrg = .true.
-     histaux_wav2med_file1_enabled = .false.
-     history_n = -999
-     history_option = never
-     hostname = betzy
-     ice_ncat = 5
-     mediator_present = true
-     mesh_atm = /cluster/shared/noresm/inputdata/share/meshes/ne16pg3_ESMFmesh_cdf5_c20211018.nc
-     mesh_glc = /cluster/shared/noresm/inputdata/share/meshes/greenland_4km_epsg3413_c170414_ESMFmesh_c20190729.nc
-     mesh_ice = /cluster/shared/noresm/inputdata/share/meshes/tnx1v4_20170601_cdf5_ESMFmesh.nc
-     mesh_lnd = /cluster/shared/noresm/inputdata/share/meshes/ne16pg3_ESMFmesh_cdf5_c20211018.nc
-     mesh_mask = /cluster/shared/noresm/inputdata/share/meshes/tnx1v4_20170601_cdf5_ESMFmesh.nc
-     mesh_ocn = /cluster/shared/noresm/inputdata/share/meshes/tnx1v4_20170601_cdf5_ESMFmesh.nc
-     model_version = unknown
-     ocn2glc_coupling = .true.
-     orb_eccen = 1.e36
-     orb_iyear = 1850
-     orb_iyear_align = 1850
-     orb_mode = fixed_year
-     orb_mvelp = 1.e36
-     orb_obliq = 1.e36
-     scol_lat = -999.99
-     scol_lon = -999.99
-     single_column_lnd_domainfile = UNSET
-     start_type = continue
-     tfreeze_option = mushy
-     username = kjetisaa
-     wav_coupling_to_cice = .false.
-::
-
 CLOCK_attributes::
      atm_cpl_dt = 1800
      calendar = NO_LEAP
@@ -305,7 +305,7 @@ CLOCK_attributes::
      restart_ymd = -999
      rof_cpl_dt = 10800
      start_tod = 0
-     start_ymd = 02310101
+     start_ymd = 02910101
      stop_n = 5
      stop_option = nyears
      stop_tod = 0
@@ -352,8 +352,8 @@ WAV_attributes::
 ::
 
 MED_modelio::
-     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.noresm3_0_beta03b.BLOMalbAndBrine.2025-10-24/run
-     logfile = med.log.1353614.251028-103925
+     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.noresm3_0_beta03b.CPLHIST.2025-10-29/run
+     logfile = med.log.1355764.251031-103154
      pio_async_interface = .false.
      pio_netcdf_format = 64bit_data
      pio_numiotasks = -99
@@ -364,8 +364,8 @@ MED_modelio::
 ::
 
 ATM_modelio::
-     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.noresm3_0_beta03b.BLOMalbAndBrine.2025-10-24/run
-     logfile = atm.log.1353614.251028-103925
+     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.noresm3_0_beta03b.CPLHIST.2025-10-29/run
+     logfile = atm.log.1355764.251031-103154
      pio_async_interface = .false.
      pio_netcdf_format = 64bit_data
      pio_numiotasks = -99
@@ -376,8 +376,8 @@ ATM_modelio::
 ::
 
 LND_modelio::
-     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.noresm3_0_beta03b.BLOMalbAndBrine.2025-10-24/run
-     logfile = lnd.log.1353614.251028-103925
+     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.noresm3_0_beta03b.CPLHIST.2025-10-29/run
+     logfile = lnd.log.1355764.251031-103154
      pio_async_interface = .false.
      pio_netcdf_format = 64bit_data
      pio_numiotasks = -99
@@ -388,8 +388,8 @@ LND_modelio::
 ::
 
 ICE_modelio::
-     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.noresm3_0_beta03b.BLOMalbAndBrine.2025-10-24/run
-     logfile = ice.log.1353614.251028-103925
+     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.noresm3_0_beta03b.CPLHIST.2025-10-29/run
+     logfile = ice.log.1355764.251031-103154
      pio_async_interface = .false.
      pio_netcdf_format = 64bit_data
      pio_numiotasks = -99
@@ -400,8 +400,8 @@ ICE_modelio::
 ::
 
 OCN_modelio::
-     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.noresm3_0_beta03b.BLOMalbAndBrine.2025-10-24/run
-     logfile = ocn.log.1353614.251028-103925
+     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.noresm3_0_beta03b.CPLHIST.2025-10-29/run
+     logfile = ocn.log.1355764.251031-103154
      pio_async_interface = .false.
      pio_netcdf_format = 64bit_data
      pio_numiotasks = -99
@@ -412,8 +412,8 @@ OCN_modelio::
 ::
 
 ROF_modelio::
-     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.noresm3_0_beta03b.BLOMalbAndBrine.2025-10-24/run
-     logfile = rof.log.1353614.251028-103925
+     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.noresm3_0_beta03b.CPLHIST.2025-10-29/run
+     logfile = rof.log.1355764.251031-103154
      pio_async_interface = .false.
      pio_netcdf_format = 64bit_data
      pio_numiotasks = -99
@@ -424,8 +424,8 @@ ROF_modelio::
 ::
 
 GLC_modelio::
-     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.noresm3_0_beta03b.BLOMalbAndBrine.2025-10-24/run
-     logfile = glc.log.1353614.251028-103925
+     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.noresm3_0_beta03b.CPLHIST.2025-10-29/run
+     logfile = glc.log.1355764.251031-103154
      pio_async_interface = .false.
      pio_netcdf_format = 64bit_data
      pio_numiotasks = -99
@@ -436,8 +436,8 @@ GLC_modelio::
 ::
 
 WAV_modelio::
-     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.noresm3_0_beta03b.BLOMalbAndBrine.2025-10-24/run
-     logfile = wav.log.1353614.251028-103925
+     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.noresm3_0_beta03b.CPLHIST.2025-10-29/run
+     logfile = wav.log.1355764.251031-103154
      pio_async_interface = .false.
      pio_netcdf_format = 64bit_data
      pio_numiotasks = -99
@@ -448,8 +448,8 @@ WAV_modelio::
 ::
 
 ESP_modelio::
-     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.noresm3_0_beta03b.BLOMalbAndBrine.2025-10-24/run
-     logfile = esp.log.1353614.251028-103925
+     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.noresm3_0_beta03b.CPLHIST.2025-10-29/run
+     logfile = esp.log.1355764.251031-103154
      pio_async_interface = .false.
      pio_netcdf_format = 64bit_data
      pio_numiotasks = -99
@@ -460,7 +460,7 @@ ESP_modelio::
 ::
 
 DRV_modelio::
-     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.noresm3_0_beta03b.BLOMalbAndBrine.2025-10-24/run
-     logfile = drv.log.1353614.251028-103925
+     diro = /cluster/work/users/kjetisaa/noresm/n1850.ne16pg3_tn14.noresm3_0_beta03b.CPLHIST.2025-10-29/run
+     logfile = drv.log.1355764.251031-103154
 ::
 

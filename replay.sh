@@ -6,9 +6,9 @@
 
 set -e
 
-# Created 2025-10-24 15:29:43
+# Created 2025-10-29 10:28:30
 
-CASEDIR="/cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.noresm3_0_beta03b.BLOMalbAndBrine.2025-10-24"
+CASEDIR="/cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.noresm3_0_beta03b.CPLHIST.2025-10-29"
 
 /cluster/work/users/kjetisaa/NorESM_3_0_beta03b/cime/scripts/create_newcase --case "${CASEDIR}" --compset 1850_CAM70%LT%NORESM%CAMoslo_CLM60%FATES-NOCOMP_CICE_BLOM%HYB%ECO_MOSART_DGLC%NOEVOLVE_SWAV_SESP --res ne16pg3_tn14 --project nn9560k --machine betzy --compiler intel --run-unsupported --user-mods-dir /cluster/work/users/kjetisaa/NorESM_3_0_beta03b/cime_config/usermods_dirs/reduced_out_devsim/
 
@@ -18,15 +18,15 @@ cd "${CASEDIR}"
 
 ./xmlchange RUN_TYPE=branch
 
-./xmlchange RUN_STARTDATE=0231-01-01,START_TOD=00000
+./xmlchange RUN_STARTDATE=0291-01-01,START_TOD=00000
 
-./xmlchange RUN_REFCASE=n1850.ne16pg3_tn14.noresm3_0_beta03a.landAndCAMupdate.2025-10-16
+./xmlchange RUN_REFCASE=n1850.ne16pg3_tn14.noresm3_0_beta03b.BLOMalbAndBrine.2025-10-24
 
-./xmlchange RUN_REFDATE=0231-01-01,RUN_REFTOD=00000
+./xmlchange RUN_REFDATE=0291-01-01,RUN_REFTOD=00000
 
 ./xmlchange GET_REFCASE=FALSE
 
-./xmlchange DRV_RESTART_POINTER=rpointer.cpl.0231-01-01-00000
+./xmlchange DRV_RESTART_POINTER=rpointer.cpl.0291-01-01-00000
 
 ./xmlchange STOP_OPTION=nyears
 
@@ -54,5 +54,7 @@ cd "${CASEDIR}"
 
 ./case.submit
 
-./xmlchange RESUBMIT=0
+./xmlchange RESUBMIT=2
+
+./xmlchange RESUBMIT=8
 

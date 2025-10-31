@@ -302,7 +302,7 @@
       <desc> main configuration file that specifies all relevant filenames
     and directories to configure a case</desc>
     </entry>
-    <entry id="CASEROOT" value="/cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.noresm3_0_beta03b.BLOMalbAndBrine.2025-10-24">
+    <entry id="CASEROOT" value="/cluster/work/users/kjetisaa/n1850.ne16pg3_tn14.noresm3_0_beta03b.CPLHIST.2025-10-29">
       <type>char</type>
       <desc>full pathname of case</desc>
     </entry>
@@ -319,7 +319,7 @@
       <type>char</type>
       <desc>full pathname of source root directory</desc>
     </entry>
-    <entry id="CASE" value="n1850.ne16pg3_tn14.noresm3_0_beta03b.BLOMalbAndBrine.2025-10-24">
+    <entry id="CASE" value="n1850.ne16pg3_tn14.noresm3_0_beta03b.CPLHIST.2025-10-29">
       <type>char</type>
       <desc>case name</desc>
     </entry>
@@ -349,7 +349,7 @@
       <type>char</type>
       <desc>username of user who created case</desc>
     </entry>
-    <entry id="CASE_HASH" value="42282344665c6ba3c5dee052419336f2b4e92b34051c6159ec886f3b2cc67944">
+    <entry id="CASE_HASH" value="322e5d492dd5e38cfb84cf29ba89a51983f1df262e886a51b2a6ef3390255370">
       <type>char</type>
       <desc>Unique identifier for case</desc>
     </entry>
