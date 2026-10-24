@@ -10,6 +10,7 @@ https://github.com/NorESMhub/noresm3_dev_simulations/wiki
 - Workflow for including development in NorESM tag version
 - Workflow for running coupled NorESM3_0_betaXX simulations on Betzy
 - Workflow for producing and managing diagnostics output
+- To report an issue with NorESM, open an issue on the [NorESMhub/NorESM](https://github.com/NorESMhub/NorESM/issues) site. Make sure that your issue is not already reported.
 
 ## Discussions
 Discussions relevant to NorESM3 development and preparation for CMIP7 could be posted under [Discussions](https://github.com/NorESMhub/noresm3_dev_simulations/discussions).
